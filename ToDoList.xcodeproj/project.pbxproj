@@ -54,14 +54,38 @@
 		6B2FF29027FF222B001FCD4B /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
+				6BEA0BF6281BF5A5007E7065 /* Application */,
+				6BEA0BF8281BF5FA007E7065 /* Screens */,
+				6BEA0BF7281BF5D6007E7065 /* Resources */,
+			);
+			path = ToDoList;
+			sourceTree = "<group>";
+		};
+		6BEA0BF6281BF5A5007E7065 /* Application */ = {
+			isa = PBXGroup;
+			children = (
 				6B2FF29127FF222B001FCD4B /* AppDelegate.swift */,
-				6B2FF29527FF222B001FCD4B /* TodolistMainViewController.swift */,
-				6B2FF29727FF222B001FCD4B /* TodolistMainViewController.storyboard */,
-				6B2FF29A27FF222C001FCD4B /* Assets.xcassets */,
 				6B2FF29C27FF222C001FCD4B /* LaunchScreen.storyboard */,
 				6B2FF29F27FF222C001FCD4B /* Info.plist */,
 			);
-			path = ToDoList;
+			path = Application;
+			sourceTree = "<group>";
+		};
+		6BEA0BF7281BF5D6007E7065 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6B2FF29A27FF222C001FCD4B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6BEA0BF8281BF5FA007E7065 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				6B2FF29527FF222B001FCD4B /* TodolistMainViewController.swift */,
+				6B2FF29727FF222B001FCD4B /* TodolistMainViewController.storyboard */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +237,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -268,6 +293,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -287,7 +313,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9WV28BAK63;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ToDoList/Info.plist;
+				INFOPLIST_FILE = ToDoList/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = TodolistMainViewController;
@@ -315,7 +341,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9WV28BAK63;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ToDoList/Info.plist;
+				INFOPLIST_FILE = ToDoList/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = TodolistMainViewController;
