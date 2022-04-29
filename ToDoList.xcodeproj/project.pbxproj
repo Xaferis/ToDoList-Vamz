@@ -12,6 +12,13 @@
 		6B2FF29927FF222B001FCD4B /* TodolistMainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B2FF29727FF222B001FCD4B /* TodolistMainViewController.storyboard */; };
 		6B2FF29B27FF222C001FCD4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B2FF29A27FF222C001FCD4B /* Assets.xcassets */; };
 		6B2FF29E27FF222C001FCD4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B2FF29C27FF222C001FCD4B /* LaunchScreen.storyboard */; };
+		6BEA0BFF281BF934007E7065 /* TabbarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BEA0BFE281BF934007E7065 /* TabbarController.storyboard */; };
+		6BEA0C01281BF9BC007E7065 /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEA0C00281BF9BC007E7065 /* FavouritesViewController.swift */; };
+		6BEA0C03281BF9F9007E7065 /* FavourtiesViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BEA0C02281BF9F9007E7065 /* FavourtiesViewController.storyboard */; };
+		6BEA0C05281BFA2B007E7065 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEA0C04281BFA2B007E7065 /* SearchViewController.swift */; };
+		6BEA0C07281BFA42007E7065 /* SearchViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BEA0C06281BFA42007E7065 /* SearchViewController.storyboard */; };
+		6BEA0C09281BFA8A007E7065 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEA0C08281BFA8A007E7065 /* AddItemViewController.swift */; };
+		6BEA0C0B281BFA9D007E7065 /* AddItemViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BEA0C0A281BFA9D007E7065 /* AddItemViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		6B2FF29A27FF222C001FCD4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B2FF29D27FF222C001FCD4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B2FF29F27FF222C001FCD4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BEA0BFE281BF934007E7065 /* TabbarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabbarController.storyboard; sourceTree = "<group>"; };
+		6BEA0C00281BF9BC007E7065 /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
+		6BEA0C02281BF9F9007E7065 /* FavourtiesViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FavourtiesViewController.storyboard; sourceTree = "<group>"; };
+		6BEA0C04281BFA2B007E7065 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		6BEA0C06281BFA42007E7065 /* SearchViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchViewController.storyboard; sourceTree = "<group>"; };
+		6BEA0C08281BFA8A007E7065 /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
+		6BEA0C0A281BFA9D007E7065 /* AddItemViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddItemViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,10 +96,57 @@
 		6BEA0BF8281BF5FA007E7065 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				6B2FF29527FF222B001FCD4B /* TodolistMainViewController.swift */,
-				6B2FF29727FF222B001FCD4B /* TodolistMainViewController.storyboard */,
+				6BEA0BFD281BF8BE007E7065 /* AddItem */,
+				6BEA0BFC281BF8B5007E7065 /* Search */,
+				6BEA0BFB281BF852007E7065 /* Favourites */,
+				6BEA0BFA281BF83E007E7065 /* Tabbar */,
+				6BEA0BF9281BF82C007E7065 /* Main */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		6BEA0BF9281BF82C007E7065 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				6B2FF29727FF222B001FCD4B /* TodolistMainViewController.storyboard */,
+				6B2FF29527FF222B001FCD4B /* TodolistMainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		6BEA0BFA281BF83E007E7065 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				6BEA0BFE281BF934007E7065 /* TabbarController.storyboard */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		6BEA0BFB281BF852007E7065 /* Favourites */ = {
+			isa = PBXGroup;
+			children = (
+				6BEA0C00281BF9BC007E7065 /* FavouritesViewController.swift */,
+				6BEA0C02281BF9F9007E7065 /* FavourtiesViewController.storyboard */,
+			);
+			path = Favourites;
+			sourceTree = "<group>";
+		};
+		6BEA0BFC281BF8B5007E7065 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				6BEA0C04281BFA2B007E7065 /* SearchViewController.swift */,
+				6BEA0C06281BFA42007E7065 /* SearchViewController.storyboard */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		6BEA0BFD281BF8BE007E7065 /* AddItem */ = {
+			isa = PBXGroup;
+			children = (
+				6BEA0C08281BFA8A007E7065 /* AddItemViewController.swift */,
+				6BEA0C0A281BFA9D007E7065 /* AddItemViewController.storyboard */,
+			);
+			path = AddItem;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,7 +208,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B2FF29E27FF222C001FCD4B /* LaunchScreen.storyboard in Resources */,
+				6BEA0C03281BF9F9007E7065 /* FavourtiesViewController.storyboard in Resources */,
+				6BEA0C0B281BFA9D007E7065 /* AddItemViewController.storyboard in Resources */,
 				6B2FF29B27FF222C001FCD4B /* Assets.xcassets in Resources */,
+				6BEA0BFF281BF934007E7065 /* TabbarController.storyboard in Resources */,
+				6BEA0C07281BFA42007E7065 /* SearchViewController.storyboard in Resources */,
 				6B2FF29927FF222B001FCD4B /* TodolistMainViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -159,7 +224,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BEA0C09281BFA8A007E7065 /* AddItemViewController.swift in Sources */,
+				6BEA0C01281BF9BC007E7065 /* FavouritesViewController.swift in Sources */,
 				6B2FF29627FF222B001FCD4B /* TodolistMainViewController.swift in Sources */,
+				6BEA0C05281BFA2B007E7065 /* SearchViewController.swift in Sources */,
 				6B2FF29227FF222B001FCD4B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
