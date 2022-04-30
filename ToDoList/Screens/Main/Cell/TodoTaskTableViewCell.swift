@@ -8,32 +8,14 @@
 import UIKit
 
 class TodoTaskTableViewCell: UITableViewCell {
+    
+    static var classString: String { String(describing: TodoTaskTableViewCell.self) }
 
     // MARK: - Outlets
     @IBOutlet weak var taskLabel: UILabel!
-    @IBOutlet weak var checkButton: UIButton!
     
     
-    //MARK: - Actions
-    @IBAction func checkedTask(_ sender: Any) {
+    func setupCell(with task: Task) {
+        taskLabel.text = task.name
     }
-    
-    @IBAction func modify(_ sender: Any) {
-    }
-    
-    
-    
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-    
-    
 }
