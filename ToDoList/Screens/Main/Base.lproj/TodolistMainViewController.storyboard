@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tvc-Mw-HyQ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -32,7 +33,11 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Tasks" image="checklist" catalog="system" selectedImage="checklist" id="VeK-G7-0Q9"/>
                     <navigationItem key="navigationItem" title="To-Do List" id="Ftb-8j-quz">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="8bq-12-XKr"/>
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="add" id="8bq-12-XKr">
+                            <connections>
+                                <action selector="add:" destination="BYZ-38-t0r" id="hzk-WP-s38"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
@@ -44,8 +49,8 @@
         <scene sceneID="wX4-JS-Zpy">
             <objects>
                 <navigationController id="tvc-Mw-HyQ" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yDi-L9-ehe">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="yDi-L9-ehe">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -59,7 +64,6 @@
     </scenes>
     <resources>
         <image name="checklist" catalog="system" width="128" height="105"/>
-        <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
