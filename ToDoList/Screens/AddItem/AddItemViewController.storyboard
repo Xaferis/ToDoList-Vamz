@@ -148,9 +148,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add task" id="x1i-UB-hyd">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Zl3-aV-sjf">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="vLq-JT-9jb">
                             <connections>
-                                <action selector="cancel:" destination="Y6W-OH-hqX" id="dDZ-Al-64d"/>
+                                <action selector="cancel:" destination="Y6W-OH-hqX" id="NUv-6V-AJe"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
