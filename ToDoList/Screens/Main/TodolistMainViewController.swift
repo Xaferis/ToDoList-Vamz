@@ -35,6 +35,7 @@ class TodolistMainViewController: UIViewController {
         super.viewDidLoad()
         
         tableView.dataSource = self
+        tableView.delegate = self
         tableView.register(
             UINib(
                 nibName: TodoTaskTableViewCell.classString,
@@ -69,8 +70,35 @@ extension TodolistMainViewController: UITableViewDataSource {
         taskCell.setupCell(with: items[indexPath.row])
         return taskCell
     }
+}
+
+
+//MARK: - Delegate
+
+extension TodolistMainViewController: UITableViewDelegate {
+//    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+//        return true
+//    }
     
+//    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+//        return .delete
+//    }
     
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+//            TodoListManager.shared.deleteTask(index: indexPath.row) {
+//                tableView.reloadData()
+//            }
+//            tableView.beginUpdates()
+            TodoListManager.shared.deleteTask(index: indexPath.row) {
+                items.remove(at: indexPath.row)
+                tableView.deleteRows(at: [indexPath], with: .fade)
+                tableView.reloadData()
+            }
+//            tableView.endUpdates()
+            
+        }
+    }
 }
 
 

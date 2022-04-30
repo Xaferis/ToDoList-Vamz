@@ -42,4 +42,10 @@ class TodoListManager {
         print("Task successfully added!")
         completion()
     }
+    
+    func deleteTask(index: Int, completion: TodoListCompletionHandler) {
+        tasks.remove(at: index)
+        print("Task successfully deleted")
+        completion()
+    }
 }
