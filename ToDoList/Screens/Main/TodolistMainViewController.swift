@@ -67,7 +67,8 @@ extension TodolistMainViewController: UITableViewDataSource {
             return UITableViewCell()
         }
         
-        taskCell.setupCell(with: items[indexPath.row])
+        taskCell.setupCell(with: items[indexPath.row], at: indexPath.row)
+        taskCell.buttonDelegate = self
         return taskCell
     }
 }
@@ -76,27 +77,14 @@ extension TodolistMainViewController: UITableViewDataSource {
 //MARK: - Delegate
 
 extension TodolistMainViewController: UITableViewDelegate {
-//    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-//        return true
-//    }
-    
-//    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
-//        return .delete
-//    }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-//            TodoListManager.shared.deleteTask(index: indexPath.row) {
-//                tableView.reloadData()
-//            }
-//            tableView.beginUpdates()
             TodoListManager.shared.deleteTask(index: indexPath.row) {
                 items.remove(at: indexPath.row)
                 tableView.deleteRows(at: [indexPath], with: .fade)
                 tableView.reloadData()
             }
-//            tableView.endUpdates()
-            
         }
     }
 }
@@ -107,10 +95,24 @@ extension TodolistMainViewController: UITableViewDelegate {
 extension TodolistMainViewController: UIViewControllerTransitioningDelegate {
 
     func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        print("Koniec popup controlleru")
         TodoListManager.shared.loadTasks {
             self.items = TodoListManager.shared.tasks
             tableView.reloadData()
         }
         return nil
+    }
+}
+
+
+//MARK: - Cell Delegate
+
+extension TodolistMainViewController: TodoTaskTableViewCellDelegate {
+    func didButtonPressed() {
+        let storyboard = UIStoryboard(name: "EditItemViewController", bundle: nil)
+        if let navigationController = storyboard.instantiateInitialViewController() {
+            present(navigationController, animated: true)
+            navigationController.transitioningDelegate = self
+        }
     }
 }
