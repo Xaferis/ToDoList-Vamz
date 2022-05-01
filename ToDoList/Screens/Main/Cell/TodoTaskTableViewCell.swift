@@ -16,12 +16,13 @@ class TodoTaskTableViewCell: UITableViewCell {
     
     //MARK: - Static variables
     static var classString: String { String(describing: TodoTaskTableViewCell.self) }
+    static let heightOfCell: CGFloat = 55
     
     
     //MARK: - Variables
     var buttonDelegate: TodoTaskTableViewCellDelegate?
     var index: Int?
-    var isChecked: Bool = false
+    var isChecked: Bool?
     
     
     //MARK: - Actions
@@ -31,7 +32,9 @@ class TodoTaskTableViewCell: UITableViewCell {
     }
     
     @IBAction func checkButton(_ sender: Any) {
-        guard let index = self.index else { return }
+        guard let index = self.index,
+              let isChecked = self.isChecked
+        else { return }
         setupButton(isCompleted: !isChecked)
         buttonDelegate?.didCheckButtonPressed(cellForRowAt: index)
     }
@@ -46,10 +49,10 @@ class TodoTaskTableViewCell: UITableViewCell {
     
     func setupButton(isCompleted: Bool) {
         switch isCompleted {
-        case false:
+        case true:
             self.checkIconButton.setImage(UIImage(systemName: "checkmark.circle.fill"), for: .normal)
             isChecked = false
-        case true:
+        case false:
             self.checkIconButton.setImage(UIImage(systemName: "circle"), for: .normal)
             isChecked = true
         }

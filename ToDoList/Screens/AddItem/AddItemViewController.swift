@@ -10,11 +10,13 @@ import UIKit
 class AddItemViewController: UIViewController {
 
     
-    
+    // MARK: - Variables
     @IBOutlet weak var taskNameLabel: UITextField!
     @IBOutlet weak var taskDescriptionLabel: UITextField!
     @IBOutlet weak var datePicker: UIDatePicker!
     
+    
+    // MARK: - Actions
     @IBAction func saveButton(_ sender: Any) {
         let newTask = Task(name: taskNameLabel.text ?? "New Task",
                            description: taskDescriptionLabel.text ?? "No additional info",
@@ -28,6 +30,8 @@ class AddItemViewController: UIViewController {
         dismiss(animated: true)
     }
     
+    
+    // MARK: - Lifecycles
     override func viewDidLoad() {
         super.viewDidLoad()
 

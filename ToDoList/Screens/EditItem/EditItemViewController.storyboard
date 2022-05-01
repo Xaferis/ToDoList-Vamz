@@ -92,7 +92,7 @@
                                             </subviews>
                                         </stackView>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMR-FV-Uip">
-                                            <rect key="frame" x="8" y="182" width="398" height="31"/>
+                                            <rect key="frame" x="8" y="221" width="398" height="31"/>
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="filled" title="Save changes"/>
                                             <connections>
@@ -100,7 +100,7 @@
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H81-2S-NnB">
-                                            <rect key="frame" x="8" y="221" width="398" height="31"/>
+                                            <rect key="frame" x="8" y="260" width="398" height="31"/>
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="filled" title="Delete task">
                                                 <color key="baseBackgroundColor" systemColor="systemRedColor"/>
@@ -109,22 +109,46 @@
                                                 <action selector="deleteTask:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="KBy-Qo-G4f"/>
                                             </connections>
                                         </button>
+                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="feo-c4-Pl9">
+                                            <rect key="frame" x="8" y="174" width="398" height="31"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Completed:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XvK-w0-3lk">
+                                                    <rect key="frame" x="0.0" y="0.0" width="329" height="31"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hZg-14-zju">
+                                                    <rect key="frame" x="329" y="0.0" width="20" height="31"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="20" id="oII-tA-LkL"/>
+                                                    </constraints>
+                                                </view>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hbd-kO-VT7">
+                                                    <rect key="frame" x="349" y="0.0" width="51" height="31"/>
+                                                </switch>
+                                            </subviews>
+                                        </stackView>
                                     </subviews>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="uMR-FV-Uip" secondAttribute="trailing" constant="8" id="1NZ-M7-oSU"/>
                                         <constraint firstItem="pJz-LH-qW9" firstAttribute="top" secondItem="SP8-e8-5zZ" secondAttribute="top" id="25D-hs-6sh"/>
+                                        <constraint firstItem="H81-2S-NnB" firstAttribute="top" secondItem="uMR-FV-Uip" secondAttribute="bottom" constant="8" id="3xp-OU-wxl"/>
+                                        <constraint firstItem="feo-c4-Pl9" firstAttribute="leading" secondItem="SP8-e8-5zZ" secondAttribute="leading" constant="8" id="4NJ-Je-WBf"/>
                                         <constraint firstAttribute="trailing" secondItem="H81-2S-NnB" secondAttribute="trailing" constant="8" id="5EP-W4-oOD"/>
                                         <constraint firstAttribute="trailing" secondItem="r0v-Gd-IMR" secondAttribute="trailing" constant="8" id="BOf-3T-iZC"/>
                                         <constraint firstAttribute="trailing" secondItem="Jt4-KH-S4Y" secondAttribute="trailing" constant="8" id="FRk-Pl-SSK"/>
-                                        <constraint firstItem="uMR-FV-Uip" firstAttribute="top" secondItem="Jt4-KH-S4Y" secondAttribute="bottom" constant="16" id="Lo5-kF-P0L"/>
+                                        <constraint firstItem="feo-c4-Pl9" firstAttribute="top" secondItem="Jt4-KH-S4Y" secondAttribute="bottom" constant="8" id="GaR-H5-CG1"/>
                                         <constraint firstAttribute="trailing" secondItem="pJz-LH-qW9" secondAttribute="trailing" constant="8" id="P71-Ce-FjZ"/>
+                                        <constraint firstItem="uMR-FV-Uip" firstAttribute="top" secondItem="feo-c4-Pl9" secondAttribute="bottom" constant="16" id="UUQ-eI-cd1"/>
                                         <constraint firstItem="pJz-LH-qW9" firstAttribute="leading" secondItem="SP8-e8-5zZ" secondAttribute="leading" constant="8" id="VOC-Qh-ppx"/>
                                         <constraint firstItem="4SM-hR-rUr" firstAttribute="trailing" secondItem="QEZ-HF-Dwb" secondAttribute="trailing" id="VQo-C8-gZh"/>
                                         <constraint firstItem="r0v-Gd-IMR" firstAttribute="leading" secondItem="SP8-e8-5zZ" secondAttribute="leading" constant="8" id="XWr-p8-1MS"/>
                                         <constraint firstItem="Jt4-KH-S4Y" firstAttribute="top" secondItem="r0v-Gd-IMR" secondAttribute="bottom" constant="8" id="ceA-X7-VZC"/>
+                                        <constraint firstAttribute="trailing" secondItem="feo-c4-Pl9" secondAttribute="trailing" constant="8" id="dFU-UU-xrA"/>
                                         <constraint firstItem="r0v-Gd-IMR" firstAttribute="top" secondItem="pJz-LH-qW9" secondAttribute="bottom" constant="8" id="fx4-gZ-4mA"/>
-                                        <constraint firstItem="H81-2S-NnB" firstAttribute="top" secondItem="uMR-FV-Uip" secondAttribute="bottom" constant="8" id="ko2-NE-o3V"/>
                                         <constraint firstItem="uMR-FV-Uip" firstAttribute="leading" secondItem="SP8-e8-5zZ" secondAttribute="leading" constant="8" id="lZS-iG-ahR"/>
                                         <constraint firstItem="Jt4-KH-S4Y" firstAttribute="leading" secondItem="SP8-e8-5zZ" secondAttribute="leading" constant="8" id="lpD-61-54x"/>
                                         <constraint firstItem="H81-2S-NnB" firstAttribute="leading" secondItem="SP8-e8-5zZ" secondAttribute="leading" constant="8" id="y10-DV-8Ae"/>
@@ -149,6 +173,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="completedSwitch" destination="Hbd-kO-VT7" id="Y1B-B3-shf"/>
                         <outlet property="datePicker" destination="eIg-po-xat" id="175-7h-3Sr"/>
                         <outlet property="descriptionTextField" destination="90p-nh-xBZ" id="0KD-tW-9kb"/>
                         <outlet property="nameTextField" destination="aTZ-0m-D9f" id="GM6-H8-rqu"/>

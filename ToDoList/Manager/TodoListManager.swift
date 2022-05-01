@@ -11,9 +11,9 @@ typealias TodoListCompletionHandler = () -> Void
 
 class TodoListManager {
     
-    static let shared = TodoListManager()
     
-    private let UDkey = "tasks_list"
+    // MARK: - Variables
+    static let shared = TodoListManager()
     
     var tasks: [Task] = [] {
         didSet {
@@ -21,12 +21,18 @@ class TodoListManager {
         }
     }
     
+    
+    // MARK: - Private
+    private let UDkey = "tasks_list"
+    
     private func saveTasks() {
         if let encodedData = try? JSONEncoder().encode(tasks) {
             UserDefaults.standard.set(encodedData, forKey: UDkey)
         }
     }
     
+    
+    // MARK: - Tasks methods
     func loadTasks(completion: TodoListCompletionHandler) {
         guard
             let decodedData = UserDefaults.standard.data(forKey: UDkey),
