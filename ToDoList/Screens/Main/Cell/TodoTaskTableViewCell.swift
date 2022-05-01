@@ -19,12 +19,8 @@ class TodoTaskTableViewCell: UITableViewCell {
     var index: Int?
     
     @IBAction func modify(_ sender: Any) {
-        buttonDelegate?.didButtonPressed()
-//        let storyboard = UIStoryboard(name: "EditItemViewController", bundle: nil)
-//        if let navigationController = storyboard.instantiateInitialViewController() {
-//            present(navigationController, animated: true)
-//            //navigationController.transitioningDelegate = self
-//        }
+        guard let index = self.index else { return }
+        buttonDelegate?.didButtonPressed(cellForRowAt: index)
     }
     
     func setupCell(with task: Task, at index: Int) {
@@ -34,5 +30,5 @@ class TodoTaskTableViewCell: UITableViewCell {
 }
 
 protocol TodoTaskTableViewCellDelegate {
-    func didButtonPressed()
+    func didButtonPressed(cellForRowAt index: Int)
 }

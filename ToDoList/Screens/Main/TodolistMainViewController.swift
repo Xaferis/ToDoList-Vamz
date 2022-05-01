@@ -20,6 +20,7 @@ class TodolistMainViewController: UIViewController {
         let storyboard = UIStoryboard(name: "AddItemViewController", bundle: nil)
         if let navigationController = storyboard.instantiateInitialViewController() {
             present(navigationController, animated: true)
+    
             navigationController.transitioningDelegate = self
         }
     }
@@ -45,6 +46,7 @@ class TodolistMainViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        //print("viewDidAppear")
         TodoListManager.shared.loadTasks {
             self.items = TodoListManager.shared.tasks
             tableView.reloadData()
@@ -80,7 +82,7 @@ extension TodolistMainViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            TodoListManager.shared.deleteTask(index: indexPath.row) {
+            TodoListManager.shared.deleteTask(at: indexPath.row) {
                 items.remove(at: indexPath.row)
                 tableView.deleteRows(at: [indexPath], with: .fade)
                 tableView.reloadData()
@@ -95,7 +97,7 @@ extension TodolistMainViewController: UITableViewDelegate {
 extension TodolistMainViewController: UIViewControllerTransitioningDelegate {
 
     func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        print("Koniec popup controlleru")
+        //print("Koniec popup controlleru")
         TodoListManager.shared.loadTasks {
             self.items = TodoListManager.shared.tasks
             tableView.reloadData()
@@ -108,11 +110,20 @@ extension TodolistMainViewController: UIViewControllerTransitioningDelegate {
 //MARK: - Cell Delegate
 
 extension TodolistMainViewController: TodoTaskTableViewCellDelegate {
-    func didButtonPressed() {
+    func didButtonPressed(cellForRowAt index: Int) {
+        //print(index)
         let storyboard = UIStoryboard(name: "EditItemViewController", bundle: nil)
-        if let navigationController = storyboard.instantiateInitialViewController() {
-            present(navigationController, animated: true)
-            navigationController.transitioningDelegate = self
+        if let viewController = storyboard.instantiateViewController(withIdentifier: "EditItemViewController") as? EditItemViewController {
+            viewController.taskIndex = index
+            navigationController?.pushViewController(viewController, animated: true)
         }
+        
+//        if let navigationController = storyboard.instantiateInitialViewController() {
+//            present(navigationController, animated: true)
+//            navigationController.transitioningDelegate = self
+//        }
+//        let vc = self.storyboard?.instantiateViewController(withIdentifier: "EditItemViewController1")
+//       // vc.taskIndex = index
+        
     }
 }

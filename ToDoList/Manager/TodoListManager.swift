@@ -13,7 +13,7 @@ class TodoListManager {
     
     static let shared = TodoListManager()
     
-    let UDkey = "tasks_list"
+    private let UDkey = "tasks_list"
     
     var tasks: [Task] = [] {
         didSet {
@@ -39,13 +39,19 @@ class TodoListManager {
     
     func addTask(task: Task, completion: TodoListCompletionHandler) {
         tasks.append(task)
-        print("Task successfully added!")
+        //print("Task successfully added!")
         completion()
     }
     
-    func deleteTask(index: Int, completion: TodoListCompletionHandler) {
+    func editTask(task: Task, at index: Int, completion: TodoListCompletionHandler) {
+        tasks[index] = task
+        //print("Task successfully edited")
+        completion()
+    }
+    
+    func deleteTask(at index: Int, completion: TodoListCompletionHandler) {
         tasks.remove(at: index)
-        print("Task successfully deleted")
+        //print("Task successfully deleted")
         completion()
     }
 }
