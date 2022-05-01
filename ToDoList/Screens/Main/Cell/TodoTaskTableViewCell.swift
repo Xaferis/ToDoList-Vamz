@@ -8,27 +8,59 @@
 import UIKit
 
 class TodoTaskTableViewCell: UITableViewCell {
-    
-    static var classString: String { String(describing: TodoTaskTableViewCell.self) }
-    
-    var buttonDelegate: TodoTaskTableViewCellDelegate?
 
     // MARK: - Outlets
     @IBOutlet weak var taskLabel: UILabel!
+    @IBOutlet weak var checkIconButton: UIButton!
     
+    
+    //MARK: - Static variables
+    static var classString: String { String(describing: TodoTaskTableViewCell.self) }
+    
+    
+    //MARK: - Variables
+    var buttonDelegate: TodoTaskTableViewCellDelegate?
     var index: Int?
+    var isChecked: Bool = false
     
+    
+    //MARK: - Actions
     @IBAction func modify(_ sender: Any) {
         guard let index = self.index else { return }
-        buttonDelegate?.didButtonPressed(cellForRowAt: index)
+        buttonDelegate?.didModifyButtonPressed(cellForRowAt: index)
     }
     
+    @IBAction func checkButton(_ sender: Any) {
+        guard let index = self.index else { return }
+        setupButton(isCompleted: !isChecked)
+        buttonDelegate?.didCheckButtonPressed(cellForRowAt: index)
+    }
+    
+    
+    //MARK: - Setup
     func setupCell(with task: Task, at index: Int) {
+        setupButton(isCompleted: task.completed)
         taskLabel.text = task.name
         self.index = index
     }
+    
+    func setupButton(isCompleted: Bool) {
+        switch isCompleted {
+        case false:
+            self.checkIconButton.setImage(UIImage(systemName: "checkmark.circle.fill"), for: .normal)
+            isChecked = false
+        case true:
+            self.checkIconButton.setImage(UIImage(systemName: "circle"), for: .normal)
+            isChecked = true
+        }
+    }
 }
 
+
+// MARK: - Protocol delegate
 protocol TodoTaskTableViewCellDelegate {
-    func didButtonPressed(cellForRowAt index: Int)
+    
+    func didModifyButtonPressed(cellForRowAt index: Int)
+    
+    func didCheckButtonPressed(cellForRowAt index: Int)
 }

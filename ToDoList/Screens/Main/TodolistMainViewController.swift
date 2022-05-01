@@ -48,8 +48,7 @@ class TodolistMainViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         //print("viewDidAppear")
         TodoListManager.shared.loadTasks {
-            self.items = TodoListManager.shared.tasks
-            tableView.reloadData()
+            refreshTableView()
             
         }
     }
@@ -84,8 +83,8 @@ extension TodolistMainViewController: UITableViewDelegate {
         if editingStyle == .delete {
             TodoListManager.shared.deleteTask(at: indexPath.row) {
                 items.remove(at: indexPath.row)
-                tableView.deleteRows(at: [indexPath], with: .fade)
-                tableView.reloadData()
+                self.tableView.deleteRows(at: [indexPath], with: .fade)
+                self.tableView.reloadData()
             }
         }
     }
@@ -99,8 +98,7 @@ extension TodolistMainViewController: UIViewControllerTransitioningDelegate {
     func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         //print("Koniec popup controlleru")
         TodoListManager.shared.loadTasks {
-            self.items = TodoListManager.shared.tasks
-            tableView.reloadData()
+            refreshTableView()
         }
         return nil
     }
@@ -110,7 +108,7 @@ extension TodolistMainViewController: UIViewControllerTransitioningDelegate {
 //MARK: - Cell Delegate
 
 extension TodolistMainViewController: TodoTaskTableViewCellDelegate {
-    func didButtonPressed(cellForRowAt index: Int) {
+    func didModifyButtonPressed(cellForRowAt index: Int) {
         //print(index)
         let storyboard = UIStoryboard(name: "EditItemViewController", bundle: nil)
         if let viewController = storyboard.instantiateViewController(withIdentifier: "EditItemViewController") as? EditItemViewController {
@@ -125,5 +123,19 @@ extension TodolistMainViewController: TodoTaskTableViewCellDelegate {
 //        let vc = self.storyboard?.instantiateViewController(withIdentifier: "EditItemViewController1")
 //       // vc.taskIndex = index
         
+    }
+    
+    func didCheckButtonPressed(cellForRowAt index: Int) {
+        TodoListManager.shared.changeStateOfTask(at: index) {
+            refreshTableView()
+        }
+    }
+}
+
+// MARK: - Refresh table view
+extension TodolistMainViewController {
+    func refreshTableView() {
+        self.items = TodoListManager.shared.tasks
+        self.tableView.reloadData()
     }
 }

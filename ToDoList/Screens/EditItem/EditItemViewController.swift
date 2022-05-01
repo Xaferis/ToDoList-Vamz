@@ -18,7 +18,7 @@ class EditItemViewController: UIViewController {
                                description: descriptionTextField.text ?? "Task Description",
                                date: datePicker.date,
                                completed: false)
-            TodoListManager.shared.editTask(task: newTask, at: index) {
+            TodoListManager.shared.editTask(newTask: newTask, at: index) {
                 navigationController?.popViewController(animated: true)
             }
         }

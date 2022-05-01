@@ -41,6 +41,9 @@
                                 <state key="normal">
                                     <imageReference key="image" image="circle" catalog="system" symbolScale="medium"/>
                                 </state>
+                                <connections>
+                                    <action selector="checkButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="h2Q-1o-jAe"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Uk-nL-Mio">
                                 <rect key="frame" x="36" y="11.5" width="42" height="21"/>
@@ -69,6 +72,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="checkIconButton" destination="pD8-JW-TE6" id="C6b-sQ-kQP"/>
                 <outlet property="taskLabel" destination="2Uk-nL-Mio" id="5ld-K2-jaN"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="143.97321428571428"/>

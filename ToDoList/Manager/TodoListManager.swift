@@ -43,8 +43,8 @@ class TodoListManager {
         completion()
     }
     
-    func editTask(task: Task, at index: Int, completion: TodoListCompletionHandler) {
-        tasks[index] = task
+    func editTask(newTask: Task, at index: Int, completion: TodoListCompletionHandler) {
+        tasks[index] = newTask
         //print("Task successfully edited")
         completion()
     }
@@ -54,4 +54,10 @@ class TodoListManager {
         //print("Task successfully deleted")
         completion()
     }
+    
+    func changeStateOfTask(at index: Int, completion: TodoListCompletionHandler) {
+        tasks[index].completed = !tasks[index].completed
+        completion()
+    }
+    
 }
