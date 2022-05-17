@@ -13,18 +13,19 @@
 		6B2FF29B27FF222C001FCD4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B2FF29A27FF222C001FCD4B /* Assets.xcassets */; };
 		6B2FF29E27FF222C001FCD4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B2FF29C27FF222C001FCD4B /* LaunchScreen.storyboard */; };
 		6BDC93C6281DF01B0033AB52 /* EditItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDC93C5281DF01B0033AB52 /* EditItemViewController.swift */; };
-		6BDC93C8281DF02E0033AB52 /* EditItemViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BDC93C7281DF02E0033AB52 /* EditItemViewController.storyboard */; };
 		6BEA0BFF281BF934007E7065 /* TabbarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BEA0BFE281BF934007E7065 /* TabbarController.storyboard */; };
 		6BEA0C01281BF9BC007E7065 /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEA0C00281BF9BC007E7065 /* FavouritesViewController.swift */; };
-		6BEA0C03281BF9F9007E7065 /* FavourtiesViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BEA0C02281BF9F9007E7065 /* FavourtiesViewController.storyboard */; };
 		6BEA0C05281BFA2B007E7065 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEA0C04281BFA2B007E7065 /* SearchViewController.swift */; };
-		6BEA0C07281BFA42007E7065 /* SearchViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BEA0C06281BFA42007E7065 /* SearchViewController.storyboard */; };
 		6BEA0C09281BFA8A007E7065 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEA0C08281BFA8A007E7065 /* AddItemViewController.swift */; };
-		6BEA0C0B281BFA9D007E7065 /* AddItemViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BEA0C0A281BFA9D007E7065 /* AddItemViewController.storyboard */; };
 		6BEA0C13281C4ECA007E7065 /* TodoTaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEA0C11281C4ECA007E7065 /* TodoTaskTableViewCell.swift */; };
 		6BEA0C14281C4ECA007E7065 /* TodoTaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BEA0C12281C4ECA007E7065 /* TodoTaskTableViewCell.xib */; };
 		6BEA0C17281D8C02007E7065 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEA0C16281D8C02007E7065 /* Task.swift */; };
 		6BEA0C1A281D9A73007E7065 /* TodoListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEA0C19281D9A73007E7065 /* TodoListManager.swift */; };
+		6BF14292283453FA0018A2F1 /* FavourtiesViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BF14294283453FA0018A2F1 /* FavourtiesViewController.storyboard */; };
+		6BF14299283454810018A2F1 /* SearchViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BF1429B283454810018A2F1 /* SearchViewController.storyboard */; };
+		6BF142A0283454D70018A2F1 /* AddItemViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BF142A2283454D70018A2F1 /* AddItemViewController.storyboard */; };
+		6BF142A7283455890018A2F1 /* EditItemViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BF142A9283455890018A2F1 /* EditItemViewController.storyboard */; };
+		6BF142B0283460B70018A2F1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6BF142B2283460B70018A2F1 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,18 +37,31 @@
 		6B2FF29D27FF222C001FCD4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B2FF29F27FF222C001FCD4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BDC93C5281DF01B0033AB52 /* EditItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemViewController.swift; sourceTree = "<group>"; };
-		6BDC93C7281DF02E0033AB52 /* EditItemViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EditItemViewController.storyboard; sourceTree = "<group>"; };
 		6BEA0BFE281BF934007E7065 /* TabbarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabbarController.storyboard; sourceTree = "<group>"; };
 		6BEA0C00281BF9BC007E7065 /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
-		6BEA0C02281BF9F9007E7065 /* FavourtiesViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FavourtiesViewController.storyboard; sourceTree = "<group>"; };
 		6BEA0C04281BFA2B007E7065 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		6BEA0C06281BFA42007E7065 /* SearchViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchViewController.storyboard; sourceTree = "<group>"; };
 		6BEA0C08281BFA8A007E7065 /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
-		6BEA0C0A281BFA9D007E7065 /* AddItemViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddItemViewController.storyboard; sourceTree = "<group>"; };
 		6BEA0C11281C4ECA007E7065 /* TodoTaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTaskTableViewCell.swift; sourceTree = "<group>"; };
 		6BEA0C12281C4ECA007E7065 /* TodoTaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodoTaskTableViewCell.xib; sourceTree = "<group>"; };
 		6BEA0C16281D8C02007E7065 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		6BEA0C19281D9A73007E7065 /* TodoListManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListManager.swift; sourceTree = "<group>"; };
+		6BF142882834510B0018A2F1 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		6BF142892834510B0018A2F1 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/TodolistMainViewController.strings; sourceTree = "<group>"; };
+		6BF1428B283451550018A2F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/TodolistMainViewController.strings; sourceTree = "<group>"; };
+		6BF14293283453FA0018A2F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/FavourtiesViewController.storyboard; sourceTree = "<group>"; };
+		6BF14296283453FE0018A2F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/FavourtiesViewController.strings; sourceTree = "<group>"; };
+		6BF142982834542D0018A2F1 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/FavourtiesViewController.strings; sourceTree = "<group>"; };
+		6BF1429A283454810018A2F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SearchViewController.storyboard; sourceTree = "<group>"; };
+		6BF1429D283454890018A2F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SearchViewController.strings; sourceTree = "<group>"; };
+		6BF1429F2834548A0018A2F1 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/SearchViewController.strings; sourceTree = "<group>"; };
+		6BF142A1283454D70018A2F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/AddItemViewController.storyboard; sourceTree = "<group>"; };
+		6BF142A4283454E20018A2F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/AddItemViewController.strings; sourceTree = "<group>"; };
+		6BF142A6283455100018A2F1 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/AddItemViewController.strings; sourceTree = "<group>"; };
+		6BF142A8283455890018A2F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/EditItemViewController.storyboard; sourceTree = "<group>"; };
+		6BF142AB2834558D0018A2F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/EditItemViewController.strings; sourceTree = "<group>"; };
+		6BF142AD283455C00018A2F1 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/EditItemViewController.strings; sourceTree = "<group>"; };
+		6BF142B1283460B70018A2F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6BF142B3283460B90018A2F1 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				6BDC93C5281DF01B0033AB52 /* EditItemViewController.swift */,
-				6BDC93C7281DF02E0033AB52 /* EditItemViewController.storyboard */,
+				6BF142A9283455890018A2F1 /* EditItemViewController.storyboard */,
 			);
 			path = EditItem;
 			sourceTree = "<group>";
@@ -111,6 +125,7 @@
 		6BEA0BF7281BF5D6007E7065 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6BF142B2283460B70018A2F1 /* Localizable.strings */,
 				6B2FF29A27FF222C001FCD4B /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -151,7 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				6BEA0C00281BF9BC007E7065 /* FavouritesViewController.swift */,
-				6BEA0C02281BF9F9007E7065 /* FavourtiesViewController.storyboard */,
+				6BF14294283453FA0018A2F1 /* FavourtiesViewController.storyboard */,
 			);
 			path = Favourites;
 			sourceTree = "<group>";
@@ -160,7 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				6BEA0C04281BFA2B007E7065 /* SearchViewController.swift */,
-				6BEA0C06281BFA42007E7065 /* SearchViewController.storyboard */,
+				6BF1429B283454810018A2F1 /* SearchViewController.storyboard */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -169,7 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				6BEA0C08281BFA8A007E7065 /* AddItemViewController.swift */,
-				6BEA0C0A281BFA9D007E7065 /* AddItemViewController.storyboard */,
+				6BF142A2283454D70018A2F1 /* AddItemViewController.storyboard */,
 			);
 			path = AddItem;
 			sourceTree = "<group>";
@@ -241,6 +256,7 @@
 			knownRegions = (
 				en,
 				Base,
+				sk,
 			);
 			mainGroup = 6B2FF28527FF222B001FCD4B;
 			productRefGroup = 6B2FF28F27FF222B001FCD4B /* Products */;
@@ -258,12 +274,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B2FF29E27FF222C001FCD4B /* LaunchScreen.storyboard in Resources */,
-				6BEA0C03281BF9F9007E7065 /* FavourtiesViewController.storyboard in Resources */,
-				6BEA0C0B281BFA9D007E7065 /* AddItemViewController.storyboard in Resources */,
+				6BF14292283453FA0018A2F1 /* FavourtiesViewController.storyboard in Resources */,
+				6BF142A0283454D70018A2F1 /* AddItemViewController.storyboard in Resources */,
 				6B2FF29B27FF222C001FCD4B /* Assets.xcassets in Resources */,
-				6BDC93C8281DF02E0033AB52 /* EditItemViewController.storyboard in Resources */,
+				6BF142A7283455890018A2F1 /* EditItemViewController.storyboard in Resources */,
+				6BF142B0283460B70018A2F1 /* Localizable.strings in Resources */,
 				6BEA0BFF281BF934007E7065 /* TabbarController.storyboard in Resources */,
-				6BEA0C07281BFA42007E7065 /* SearchViewController.storyboard in Resources */,
+				6BF14299283454810018A2F1 /* SearchViewController.storyboard in Resources */,
 				6BEA0C14281C4ECA007E7065 /* TodoTaskTableViewCell.xib in Resources */,
 				6B2FF29927FF222B001FCD4B /* TodolistMainViewController.storyboard in Resources */,
 			);
@@ -295,6 +312,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				6B2FF29827FF222B001FCD4B /* Base */,
+				6BF142892834510B0018A2F1 /* sk */,
+				6BF1428B283451550018A2F1 /* en */,
 			);
 			name = TodolistMainViewController.storyboard;
 			sourceTree = "<group>";
@@ -303,8 +322,58 @@
 			isa = PBXVariantGroup;
 			children = (
 				6B2FF29D27FF222C001FCD4B /* Base */,
+				6BF142882834510B0018A2F1 /* sk */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		6BF14294283453FA0018A2F1 /* FavourtiesViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6BF14293283453FA0018A2F1 /* Base */,
+				6BF14296283453FE0018A2F1 /* en */,
+				6BF142982834542D0018A2F1 /* sk */,
+			);
+			name = FavourtiesViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		6BF1429B283454810018A2F1 /* SearchViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6BF1429A283454810018A2F1 /* Base */,
+				6BF1429D283454890018A2F1 /* en */,
+				6BF1429F2834548A0018A2F1 /* sk */,
+			);
+			name = SearchViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		6BF142A2283454D70018A2F1 /* AddItemViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6BF142A1283454D70018A2F1 /* Base */,
+				6BF142A4283454E20018A2F1 /* en */,
+				6BF142A6283455100018A2F1 /* sk */,
+			);
+			name = AddItemViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		6BF142A9283455890018A2F1 /* EditItemViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6BF142A8283455890018A2F1 /* Base */,
+				6BF142AB2834558D0018A2F1 /* en */,
+				6BF142AD283455C00018A2F1 /* sk */,
+			);
+			name = EditItemViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		6BF142B2283460B70018A2F1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6BF142B1283460B70018A2F1 /* en */,
+				6BF142B3283460B90018A2F1 /* sk */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -314,6 +383,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -376,6 +446,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";

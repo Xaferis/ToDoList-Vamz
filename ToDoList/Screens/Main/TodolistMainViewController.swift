@@ -43,7 +43,7 @@ class TodolistMainViewController: UIViewController {
                 nibName: TodoTaskTableViewCell.classString,
                 bundle: nil),
             forCellReuseIdentifier: TodoTaskTableViewCell.classString)
-        print(items)
+        print(NSLocalizedString("new_task_edit", comment: "default name, if the name box wasn't filled"));
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -60,9 +60,9 @@ extension TodolistMainViewController: UITableViewDataSource {
         return items.count
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
-    }
+//    func numberOfSections(in tableView: UITableView) -> Int {
+//        return 3
+//    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let taskCell = tableView.dequeueReusableCell(withIdentifier: TodoTaskTableViewCell.classString,
@@ -76,9 +76,9 @@ extension TodolistMainViewController: UITableViewDataSource {
         return taskCell
     }
     
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "\(section+5).4.2022"
-    }
+//    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+//        return "\(section+5).4.2022"
+//    }
 }
 
 

@@ -1,0 +1,24 @@
+
+/* Class = "UILabel"; text = "Date:"; ObjectID = "3L0-nJ-4Gq"; */
+"3L0-nJ-4Gq.text" = "Dátum:";
+
+/* Class = "UITextField"; placeholder = "Task name"; ObjectID = "Dea-Zw-WBa"; */
+"Dea-Zw-WBa.placeholder" = "Názov úlohy";
+
+/* Class = "UILabel"; text = "Name:"; ObjectID = "ZUn-46-qdC"; */
+"ZUn-46-qdC.text" = "Názov:";
+
+/* Class = "UIButton"; configuration.title = "Save task"; ObjectID = "shk-hd-DJN"; */
+"shk-hd-DJN.configuration.title" = "Uložiť";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "shk-hd-DJN"; */
+"shk-hd-DJN.normalTitle" = "Uložiť";
+
+/* Class = "UITextField"; placeholder = "Task description"; ObjectID = "wD4-mx-kg1"; */
+"wD4-mx-kg1.placeholder" = "Popis úlohy";
+
+/* Class = "UILabel"; text = "Description:"; ObjectID = "wfT-zy-ebt"; */
+"wfT-zy-ebt.text" = "Popis:";
+
+/* Class = "UINavigationItem"; title = "Add task"; ObjectID = "x1i-UB-hyd"; */
+"x1i-UB-hyd.title" = "Pridať úlohu";

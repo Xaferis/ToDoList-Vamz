@@ -1,0 +1,33 @@
+
+/* Class = "UINavigationItem"; title = "Edit Item"; ObjectID = "1Ii-2g-Roy"; */
+"1Ii-2g-Roy.title" = "Edit Item";
+
+/* Class = "UILabel"; text = "Date:"; ObjectID = "5RZ-Oa-Aga"; */
+"5RZ-Oa-Aga.text" = "Date:";
+
+/* Class = "UITextField"; placeholder = "Task description"; ObjectID = "90p-nh-xBZ"; */
+"90p-nh-xBZ.placeholder" = "Task description";
+
+/* Class = "UIButton"; configuration.title = "Delete task"; ObjectID = "H81-2S-NnB"; */
+"H81-2S-NnB.configuration.title" = "Delete task";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "H81-2S-NnB"; */
+"H81-2S-NnB.normalTitle" = "Delete task";
+
+/* Class = "UILabel"; text = "Description:"; ObjectID = "Ib7-xa-QgZ"; */
+"Ib7-xa-QgZ.text" = "Description:";
+
+/* Class = "UILabel"; text = "Name:"; ObjectID = "Rxd-tA-hmP"; */
+"Rxd-tA-hmP.text" = "Name:";
+
+/* Class = "UILabel"; text = "Completed:"; ObjectID = "XvK-w0-3lk"; */
+"XvK-w0-3lk.text" = "Completed:";
+
+/* Class = "UITextField"; placeholder = "Task name"; ObjectID = "aTZ-0m-D9f"; */
+"aTZ-0m-D9f.placeholder" = "Task name";
+
+/* Class = "UIButton"; configuration.title = "Save changes"; ObjectID = "uMR-FV-Uip"; */
+"uMR-FV-Uip.configuration.title" = "Save changes";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "uMR-FV-Uip"; */
+"uMR-FV-Uip.normalTitle" = "Save changes";
