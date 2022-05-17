@@ -18,7 +18,8 @@ class TodolistMainViewController: UIViewController {
     
     @IBAction func add(_ sender: Any) {
         let storyboard = UIStoryboard(name: "AddItemViewController", bundle: nil)
-        if let navigationController = storyboard.instantiateInitialViewController() {
+        if let navigationController = storyboard.instantiateInitialViewController() as? UINavigationController,
+           let addViewController = navigationController.topViewController as? AddItemViewController {
             present(navigationController, animated: true)
     
             navigationController.transitioningDelegate = self
@@ -46,10 +47,8 @@ class TodolistMainViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        //print("viewDidAppear")
         TodoListManager.shared.loadTasks {
             refreshTableView()
-            
         }
     }
 }
@@ -58,7 +57,11 @@ class TodolistMainViewController: UIViewController {
 
 extension TodolistMainViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        items.count
+        return items.count
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -71,6 +74,10 @@ extension TodolistMainViewController: UITableViewDataSource {
         taskCell.setupCell(with: items[indexPath.row], at: indexPath.row)
         taskCell.buttonDelegate = self
         return taskCell
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "\(section+5).4.2022"
     }
 }
 
@@ -139,7 +146,7 @@ extension TodolistMainViewController: TodoTaskTableViewCellDelegate {
 // MARK: - Refresh table view
 extension TodolistMainViewController {
     func refreshTableView() {
-        self.items = TodoListManager.shared.tasks
+        self.items = TodoListManager.shared.getTasks()
         self.tableView.reloadData()
     }
 }

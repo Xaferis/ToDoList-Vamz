@@ -15,7 +15,7 @@ class TodoListManager {
     // MARK: - Variables
     static let shared = TodoListManager()
     
-    var tasks: [Task] = [] {
+    private var tasks: [Task] = [] {
         didSet {
             saveTasks()
         }
@@ -64,6 +64,10 @@ class TodoListManager {
     func changeStateOfTask(at index: Int, completion: TodoListCompletionHandler) {
         tasks[index].completed = !tasks[index].completed
         completion()
+    }
+    
+    func getTasks() -> [Task] {
+        return tasks;
     }
     
 }

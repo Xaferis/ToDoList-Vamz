@@ -53,13 +53,12 @@ class EditItemViewController: UIViewController {
         super.viewDidLoad()
 
         if let index = self.taskIndex {
-            let task = TodoListManager.shared.tasks[index]
+            let task = TodoListManager.shared.getTasks()[index]
             nameTextField.text = task.name
             descriptionTextField.text = task.description
             datePicker.date = task.date
             completedSwitch.isOn = task.completed
             
         }
-        // Do any additional setup after loading the view.
     }
 }
