@@ -18,7 +18,9 @@ class TodoListManager {
     
     private var listOfTasks: [Task] = []
     
-    let dateFormatter = DateFormatter.mediumDateFormatter
+    private let dateFormatter = DateFormatter.mediumDateFormatter
+    
+    static let completedDate = Date.from(2100, 12, 31)
     
     
     // MARK: - Private
@@ -42,6 +44,8 @@ class TodoListManager {
         completion()
     }
     
+    
+    //MARK: - Add Task
     func addTask(task: TaskModel, completion: TodoListCompletionHandler) {
         if let index = listOfTasks.firstIndex(where: { dateFormatter.string(from: $0.date) == dateFormatter.string(from: task.date)}) {
             listOfTasks[index].tasks.append(task)
@@ -54,19 +58,28 @@ class TodoListManager {
         completion()
     }
     
+    
+    //MARK: - Edit Task
     func editTask(newTask: TaskModel, at position: taskPosition, completion: TodoListCompletionHandler) {
-        if newTask.date != listOfTasks[position.section].date {
+        if newTask.completed && newTask.completed != listOfTasks[position.section].tasks[position.row].completed {
             deleteTask(at: position) {}
-            addTask(task: newTask) {}
+            moveToCompletedSection(newTask: newTask)
         } else {
-            listOfTasks[position.section].tasks[position.row] = newTask
-            saveTasks()
+            if newTask.date != listOfTasks[position.section].date {
+                deleteTask(at: position) {}
+                addTask(task: newTask) {}
+            } else {
+                listOfTasks[position.section].tasks[position.row] = newTask
+                saveTasks()
+            }
         }
         //print("Task successfully edited")
         completion()
         
     }
     
+    
+    //MARK: - Delete Task
     func deleteTask(at position: taskPosition, completion: TodoListCompletionHandler) {
         listOfTasks[position.section].tasks.remove(at: position.row)
         if listOfTasks[position.section].tasks.isEmpty {
@@ -77,9 +90,39 @@ class TodoListManager {
         completion()
     }
     
+    
+    //MARK: - Change state of Task
     func changeStateOfTask(at position: taskPosition, completion: TodoListCompletionHandler) {
-        listOfTasks[position.section].tasks[position.row].completed = !listOfTasks[position.section].tasks[position.row].completed
+        var taskModel = listOfTasks[position.section].tasks[position.row]
+        
+        deleteTask(at: position) {}
+        taskModel.completed = !taskModel.completed
+        
+        if taskModel.completed {
+            moveToCompletedSection(newTask: taskModel)
+        } else {
+            addTask(task: taskModel) {}
+        }
         completion()
+    }
+    
+    //MARK: - Move to completed section
+    private func moveToCompletedSection(newTask: TaskModel) {
+//        let task = listOfTasks[position.section].tasks.remove(at: position.row)
+//        if listOfTasks[position.section].tasks.isEmpty {
+//            listOfTasks.remove(at: position.section)
+//        }
+        if let lastTask = self.listOfTasks.last,
+           let completedDate = TodoListManager.completedDate {
+            
+            if dateFormatter.string(from: lastTask.date) == dateFormatter.string(from: completedDate) {
+                let lastIndex = self.listOfTasks.endIndex - 1
+                self.listOfTasks[lastIndex].tasks.append(newTask)
+            } else {
+                self.listOfTasks.append(Task(date: completedDate, tasks: [newTask]))
+            }
+        }
+        saveTasks()
     }
     
     func getTasks() -> [Task] {

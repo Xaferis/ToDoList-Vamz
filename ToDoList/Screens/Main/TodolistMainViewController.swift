@@ -81,7 +81,8 @@ extension TodolistMainViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return dateFormatter.string(from: items[section].date)
+        return dateFormatter.string(from: items[section].date) ==
+                dateFormatter.string(from: TodoListManager.completedDate!) ? "Completed" : dateFormatter.string(from: items[section].date)
     }
 }
 
