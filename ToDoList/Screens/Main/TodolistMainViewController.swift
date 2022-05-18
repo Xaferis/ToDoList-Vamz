@@ -17,9 +17,9 @@ class TodolistMainViewController: UIViewController {
     //MARK: - Actions
     
     @IBAction func add(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "AddItemViewController", bundle: nil)
+        let storyboard = UIStoryboard(name: "AddTaskViewController", bundle: nil)
         if let navigationController = storyboard.instantiateInitialViewController() as? UINavigationController,
-           let addViewController = navigationController.topViewController as? AddItemViewController {
+           let addViewController = navigationController.topViewController as? AddTaskViewController {
             present(navigationController, animated: true)
     
             navigationController.transitioningDelegate = self
@@ -47,8 +47,7 @@ class TodolistMainViewController: UIViewController {
                 nibName: TodoTaskTableViewCell.classString,
                 bundle: nil),
             forCellReuseIdentifier: TodoTaskTableViewCell.classString)
-        print(NSLocalizedString("new_task", comment: "default name, if the name box wasn't filled"));
-    }
+        }
     
     override func viewDidAppear(_ animated: Bool) {
         TodoListManager.shared.loadTasks {
@@ -131,8 +130,8 @@ extension TodolistMainViewController: UIViewControllerTransitioningDelegate {
 extension TodolistMainViewController: TodoTaskTableViewCellDelegate {
     func didModifyButtonPressed(cellForRowAt position: taskPosition) {
         //print(index)
-        let storyboard = UIStoryboard(name: "EditItemViewController", bundle: nil)
-        if let viewController = storyboard.instantiateViewController(withIdentifier: "EditItemViewController") as? EditItemViewController {
+        let storyboard = UIStoryboard(name: "EditTaskViewController", bundle: nil)
+        if let viewController = storyboard.instantiateViewController(withIdentifier: "EditTaskViewController") as? EditTaskViewController {
             viewController.taskIndex = position
             navigationController?.pushViewController(viewController, animated: true)
         }

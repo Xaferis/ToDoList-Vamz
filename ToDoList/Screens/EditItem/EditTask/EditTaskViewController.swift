@@ -7,7 +7,7 @@
 
 import UIKit
 
-class EditItemViewController: UIViewController {
+class EditTaskViewController: UIViewController {
     
     
     // MARK: - Outlets

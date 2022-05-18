@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AddItemViewController: UIViewController {
+class AddTaskViewController: UIViewController {
 
     
     // MARK: - Variables

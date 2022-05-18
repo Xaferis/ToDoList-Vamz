@@ -18,19 +18,19 @@
 		6B3EC62B283562B7008F475F /* FavouritesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B3EC629283562B7008F475F /* FavouritesTableViewCell.xib */; };
 		6B3EC62D283566A7008F475F /* Favourite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3EC62C283566A7008F475F /* Favourite.swift */; };
 		6B3EC62F283588A2008F475F /* FavouritesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3EC62E283588A2008F475F /* FavouritesManager.swift */; };
-		6BDC93C6281DF01B0033AB52 /* EditItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDC93C5281DF01B0033AB52 /* EditItemViewController.swift */; };
+		6BDC93C6281DF01B0033AB52 /* EditTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDC93C5281DF01B0033AB52 /* EditTaskViewController.swift */; };
 		6BEA0BFF281BF934007E7065 /* TabbarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BEA0BFE281BF934007E7065 /* TabbarController.storyboard */; };
 		6BEA0C01281BF9BC007E7065 /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEA0C00281BF9BC007E7065 /* FavouritesViewController.swift */; };
 		6BEA0C05281BFA2B007E7065 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEA0C04281BFA2B007E7065 /* SearchViewController.swift */; };
-		6BEA0C09281BFA8A007E7065 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEA0C08281BFA8A007E7065 /* AddItemViewController.swift */; };
+		6BEA0C09281BFA8A007E7065 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEA0C08281BFA8A007E7065 /* AddTaskViewController.swift */; };
 		6BEA0C13281C4ECA007E7065 /* TodoTaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEA0C11281C4ECA007E7065 /* TodoTaskTableViewCell.swift */; };
 		6BEA0C14281C4ECA007E7065 /* TodoTaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BEA0C12281C4ECA007E7065 /* TodoTaskTableViewCell.xib */; };
 		6BEA0C17281D8C02007E7065 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEA0C16281D8C02007E7065 /* Task.swift */; };
 		6BEA0C1A281D9A73007E7065 /* TodoListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEA0C19281D9A73007E7065 /* TodoListManager.swift */; };
 		6BF14292283453FA0018A2F1 /* FavourtiesViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BF14294283453FA0018A2F1 /* FavourtiesViewController.storyboard */; };
 		6BF14299283454810018A2F1 /* SearchViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BF1429B283454810018A2F1 /* SearchViewController.storyboard */; };
-		6BF142A0283454D70018A2F1 /* AddItemViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BF142A2283454D70018A2F1 /* AddItemViewController.storyboard */; };
-		6BF142A7283455890018A2F1 /* EditItemViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BF142A9283455890018A2F1 /* EditItemViewController.storyboard */; };
+		6BF142A0283454D70018A2F1 /* AddTaskViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BF142A2283454D70018A2F1 /* AddTaskViewController.storyboard */; };
+		6BF142A7283455890018A2F1 /* EditTaskViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BF142A9283455890018A2F1 /* EditTaskViewController.storyboard */; };
 		6BF142B0283460B70018A2F1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6BF142B2283460B70018A2F1 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
@@ -48,11 +48,11 @@
 		6B3EC629283562B7008F475F /* FavouritesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouritesTableViewCell.xib; sourceTree = "<group>"; };
 		6B3EC62C283566A7008F475F /* Favourite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favourite.swift; sourceTree = "<group>"; };
 		6B3EC62E283588A2008F475F /* FavouritesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesManager.swift; sourceTree = "<group>"; };
-		6BDC93C5281DF01B0033AB52 /* EditItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemViewController.swift; sourceTree = "<group>"; };
+		6BDC93C5281DF01B0033AB52 /* EditTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskViewController.swift; sourceTree = "<group>"; };
 		6BEA0BFE281BF934007E7065 /* TabbarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabbarController.storyboard; sourceTree = "<group>"; };
 		6BEA0C00281BF9BC007E7065 /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
 		6BEA0C04281BFA2B007E7065 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		6BEA0C08281BFA8A007E7065 /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
+		6BEA0C08281BFA8A007E7065 /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
 		6BEA0C11281C4ECA007E7065 /* TodoTaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTaskTableViewCell.swift; sourceTree = "<group>"; };
 		6BEA0C12281C4ECA007E7065 /* TodoTaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodoTaskTableViewCell.xib; sourceTree = "<group>"; };
 		6BEA0C16281D8C02007E7065 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
@@ -66,12 +66,12 @@
 		6BF1429A283454810018A2F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SearchViewController.storyboard; sourceTree = "<group>"; };
 		6BF1429D283454890018A2F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SearchViewController.strings; sourceTree = "<group>"; };
 		6BF1429F2834548A0018A2F1 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/SearchViewController.strings; sourceTree = "<group>"; };
-		6BF142A1283454D70018A2F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/AddItemViewController.storyboard; sourceTree = "<group>"; };
-		6BF142A4283454E20018A2F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/AddItemViewController.strings; sourceTree = "<group>"; };
-		6BF142A6283455100018A2F1 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/AddItemViewController.strings; sourceTree = "<group>"; };
-		6BF142A8283455890018A2F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/EditItemViewController.storyboard; sourceTree = "<group>"; };
-		6BF142AB2834558D0018A2F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/EditItemViewController.strings; sourceTree = "<group>"; };
-		6BF142AD283455C00018A2F1 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/EditItemViewController.strings; sourceTree = "<group>"; };
+		6BF142A1283454D70018A2F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/AddTaskViewController.storyboard; sourceTree = "<group>"; };
+		6BF142A4283454E20018A2F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/AddTaskViewController.strings; sourceTree = "<group>"; };
+		6BF142A6283455100018A2F1 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/AddTaskViewController.strings; sourceTree = "<group>"; };
+		6BF142A8283455890018A2F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/EditTaskViewController.storyboard; sourceTree = "<group>"; };
+		6BF142AB2834558D0018A2F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/EditTaskViewController.strings; sourceTree = "<group>"; };
+		6BF142AD283455C00018A2F1 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/EditTaskViewController.strings; sourceTree = "<group>"; };
 		6BF142B1283460B70018A2F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6BF142B3283460B90018A2F1 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -134,11 +134,43 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		6B3EC6302835B0D3008F475F /* AddTask */ = {
+			isa = PBXGroup;
+			children = (
+				6BF142A2283454D70018A2F1 /* AddTaskViewController.storyboard */,
+				6BEA0C08281BFA8A007E7065 /* AddTaskViewController.swift */,
+			);
+			path = AddTask;
+			sourceTree = "<group>";
+		};
+		6B3EC6312835B0E7008F475F /* AddFavourites */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AddFavourites;
+			sourceTree = "<group>";
+		};
+		6B3EC6322835B224008F475F /* EditTask */ = {
+			isa = PBXGroup;
+			children = (
+				6BF142A9283455890018A2F1 /* EditTaskViewController.storyboard */,
+				6BDC93C5281DF01B0033AB52 /* EditTaskViewController.swift */,
+			);
+			path = EditTask;
+			sourceTree = "<group>";
+		};
+		6B3EC6332835B23B008F475F /* EditFavourites */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EditFavourites;
+			sourceTree = "<group>";
+		};
 		6BDC93C4281DEFFC0033AB52 /* EditItem */ = {
 			isa = PBXGroup;
 			children = (
-				6BDC93C5281DF01B0033AB52 /* EditItemViewController.swift */,
-				6BF142A9283455890018A2F1 /* EditItemViewController.storyboard */,
+				6B3EC6322835B224008F475F /* EditTask */,
+				6B3EC6332835B23B008F475F /* EditFavourites */,
 			);
 			path = EditItem;
 			sourceTree = "<group>";
@@ -215,8 +247,8 @@
 		6BEA0BFD281BF8BE007E7065 /* AddItem */ = {
 			isa = PBXGroup;
 			children = (
-				6BEA0C08281BFA8A007E7065 /* AddItemViewController.swift */,
-				6BF142A2283454D70018A2F1 /* AddItemViewController.storyboard */,
+				6B3EC6302835B0D3008F475F /* AddTask */,
+				6B3EC6312835B0E7008F475F /* AddFavourites */,
 			);
 			path = AddItem;
 			sourceTree = "<group>";
@@ -310,9 +342,9 @@
 				6B2FF29E27FF222C001FCD4B /* LaunchScreen.storyboard in Resources */,
 				6B3EC62B283562B7008F475F /* FavouritesTableViewCell.xib in Resources */,
 				6BF14292283453FA0018A2F1 /* FavourtiesViewController.storyboard in Resources */,
-				6BF142A0283454D70018A2F1 /* AddItemViewController.storyboard in Resources */,
+				6BF142A0283454D70018A2F1 /* AddTaskViewController.storyboard in Resources */,
 				6B2FF29B27FF222C001FCD4B /* Assets.xcassets in Resources */,
-				6BF142A7283455890018A2F1 /* EditItemViewController.storyboard in Resources */,
+				6BF142A7283455890018A2F1 /* EditTaskViewController.storyboard in Resources */,
 				6BF142B0283460B70018A2F1 /* Localizable.strings in Resources */,
 				6BEA0BFF281BF934007E7065 /* TabbarController.storyboard in Resources */,
 				6BF14299283454810018A2F1 /* SearchViewController.storyboard in Resources */,
@@ -328,8 +360,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BEA0C09281BFA8A007E7065 /* AddItemViewController.swift in Sources */,
-				6BDC93C6281DF01B0033AB52 /* EditItemViewController.swift in Sources */,
+				6BEA0C09281BFA8A007E7065 /* AddTaskViewController.swift in Sources */,
+				6BDC93C6281DF01B0033AB52 /* EditTaskViewController.swift in Sources */,
 				6BEA0C01281BF9BC007E7065 /* FavouritesViewController.swift in Sources */,
 				6B2FF29627FF222B001FCD4B /* TodolistMainViewController.swift in Sources */,
 				6B3EC62428351ADB008F475F /* DateFormatter.swift in Sources */,
@@ -387,24 +419,24 @@
 			name = SearchViewController.storyboard;
 			sourceTree = "<group>";
 		};
-		6BF142A2283454D70018A2F1 /* AddItemViewController.storyboard */ = {
+		6BF142A2283454D70018A2F1 /* AddTaskViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				6BF142A1283454D70018A2F1 /* Base */,
 				6BF142A4283454E20018A2F1 /* en */,
 				6BF142A6283455100018A2F1 /* sk */,
 			);
-			name = AddItemViewController.storyboard;
+			name = AddTaskViewController.storyboard;
 			sourceTree = "<group>";
 		};
-		6BF142A9283455890018A2F1 /* EditItemViewController.storyboard */ = {
+		6BF142A9283455890018A2F1 /* EditTaskViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				6BF142A8283455890018A2F1 /* Base */,
 				6BF142AB2834558D0018A2F1 /* en */,
 				6BF142AD283455C00018A2F1 /* sk */,
 			);
-			name = EditItemViewController.storyboard;
+			name = EditTaskViewController.storyboard;
 			sourceTree = "<group>";
 		};
 		6BF142B2283460B70018A2F1 /* Localizable.strings */ = {
