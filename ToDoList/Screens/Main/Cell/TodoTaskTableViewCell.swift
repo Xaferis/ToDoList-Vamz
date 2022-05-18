@@ -47,7 +47,7 @@ class TodoTaskTableViewCell: UITableViewCell {
         self.position = position
     }
     
-    func setupButton(isCompleted: Bool) {
+    private func setupButton(isCompleted: Bool) {
         switch isCompleted {
         case true:
             self.checkIconButton.setImage(UIImage(systemName: "checkmark.circle.fill"), for: .normal)

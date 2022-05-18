@@ -48,8 +48,17 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Favourites" image="star.fill" catalog="system" id="oYf-fH-yye"/>
-                    <navigationItem key="navigationItem" title="Favourites" id="9qC-jS-DR3"/>
+                    <navigationItem key="navigationItem" title="Favourites" id="9qC-jS-DR3">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="3JT-CU-qJ5">
+                            <connections>
+                                <action selector="addButton:" destination="Y6W-OH-hqX" id="bJZ-ti-3aD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="sqk-FG-DqK" id="9jl-DI-plM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

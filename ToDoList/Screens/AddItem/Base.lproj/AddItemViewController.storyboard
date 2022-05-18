@@ -43,7 +43,7 @@
                                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zkm-jw-B5r">
                                             <rect key="frame" x="8" y="0.0" width="398" height="20.5"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZUn-46-qdC">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="100" id="ZUn-46-qdC">
                                                     <rect key="frame" x="0.0" y="0.0" width="52" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
@@ -54,11 +54,14 @@
                                                     <rect key="frame" x="52" y="0.0" width="65" height="20.5"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="20" id="Nuy-M8-y75"/>
+                                                        <constraint firstAttribute="width" priority="990" constant="20" id="Nuy-M8-y75"/>
                                                     </constraints>
                                                 </view>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Task name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Dea-Zw-WBa">
                                                     <rect key="frame" x="117" y="0.0" width="281" height="20.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="uwx-iO-bAL"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
@@ -83,6 +86,9 @@
                                                 </view>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Task description" textAlignment="natural" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="wD4-mx-kg1">
                                                     <rect key="frame" x="117" y="0.0" width="281" height="20.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="nIi-w5-Tbl"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
@@ -107,6 +113,9 @@
                                                 </view>
                                                 <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="KDW-ZP-BH8">
                                                     <rect key="frame" x="62.5" y="0.0" width="335.5" height="20.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="a1L-qc-0Ip"/>
+                                                    </constraints>
                                                 </datePicker>
                                             </subviews>
                                         </stackView>

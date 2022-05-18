@@ -47,7 +47,7 @@ class TodolistMainViewController: UIViewController {
                 nibName: TodoTaskTableViewCell.classString,
                 bundle: nil),
             forCellReuseIdentifier: TodoTaskTableViewCell.classString)
-        print(NSLocalizedString("new_task_edit", comment: "default name, if the name box wasn't filled"));
+        print(NSLocalizedString("new_task", comment: "default name, if the name box wasn't filled"));
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -155,7 +155,7 @@ extension TodolistMainViewController: TodoTaskTableViewCellDelegate {
 
 // MARK: - Refresh table view
 extension TodolistMainViewController {
-    func refreshTableView() {
+    private func refreshTableView() {
         self.items = TodoListManager.shared.getTasks()
         self.tableView.reloadData()
     }

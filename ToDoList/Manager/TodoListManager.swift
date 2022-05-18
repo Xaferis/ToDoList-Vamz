@@ -54,7 +54,6 @@ class TodoListManager {
             listOfTasks.sort(by: { $0.date < $1.date})
         }
         saveTasks()
-        //print("Task successfully added!")
         completion()
     }
     
@@ -73,7 +72,6 @@ class TodoListManager {
                 saveTasks()
             }
         }
-        //print("Task successfully edited")
         completion()
         
     }
@@ -86,7 +84,6 @@ class TodoListManager {
             listOfTasks.remove(at: position.section)
         }
         saveTasks()
-        //print("Task successfully deleted")
         completion()
     }
     
@@ -108,10 +105,6 @@ class TodoListManager {
     
     //MARK: - Move to completed section
     private func moveToCompletedSection(newTask: TaskModel) {
-//        let task = listOfTasks[position.section].tasks.remove(at: position.row)
-//        if listOfTasks[position.section].tasks.isEmpty {
-//            listOfTasks.remove(at: position.section)
-//        }
         if let lastTask = self.listOfTasks.last,
            let completedDate = TodoListManager.completedDate {
             
