@@ -12,6 +12,7 @@
 		6B2FF29927FF222B001FCD4B /* TodolistMainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B2FF29727FF222B001FCD4B /* TodolistMainViewController.storyboard */; };
 		6B2FF29B27FF222C001FCD4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B2FF29A27FF222C001FCD4B /* Assets.xcassets */; };
 		6B2FF29E27FF222C001FCD4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B2FF29C27FF222C001FCD4B /* LaunchScreen.storyboard */; };
+		6B3EC62428351ADB008F475F /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3EC62328351ADB008F475F /* DateFormatter.swift */; };
 		6BDC93C6281DF01B0033AB52 /* EditItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDC93C5281DF01B0033AB52 /* EditItemViewController.swift */; };
 		6BEA0BFF281BF934007E7065 /* TabbarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BEA0BFE281BF934007E7065 /* TabbarController.storyboard */; };
 		6BEA0C01281BF9BC007E7065 /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEA0C00281BF9BC007E7065 /* FavouritesViewController.swift */; };
@@ -36,6 +37,7 @@
 		6B2FF29A27FF222C001FCD4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B2FF29D27FF222C001FCD4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B2FF29F27FF222C001FCD4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B3EC62328351ADB008F475F /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		6BDC93C5281DF01B0033AB52 /* EditItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemViewController.swift; sourceTree = "<group>"; };
 		6BEA0BFE281BF934007E7065 /* TabbarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabbarController.storyboard; sourceTree = "<group>"; };
 		6BEA0C00281BF9BC007E7065 /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 		6B2FF29027FF222B001FCD4B /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
+				6B3EC62228351AAC008F475F /* Extensions */,
 				6BEA0C18281D9A5D007E7065 /* Manager */,
 				6BEA0C15281D8BD7007E7065 /* Model */,
 				6BEA0BF6281BF5A5007E7065 /* Application */,
@@ -101,6 +104,14 @@
 				6BEA0BF7281BF5D6007E7065 /* Resources */,
 			);
 			path = ToDoList;
+			sourceTree = "<group>";
+		};
+		6B3EC62228351AAC008F475F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6B3EC62328351ADB008F475F /* DateFormatter.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		6BDC93C4281DEFFC0033AB52 /* EditItem */ = {
@@ -297,6 +308,7 @@
 				6BDC93C6281DF01B0033AB52 /* EditItemViewController.swift in Sources */,
 				6BEA0C01281BF9BC007E7065 /* FavouritesViewController.swift in Sources */,
 				6B2FF29627FF222B001FCD4B /* TodolistMainViewController.swift in Sources */,
+				6B3EC62428351ADB008F475F /* DateFormatter.swift in Sources */,
 				6BEA0C05281BFA2B007E7065 /* SearchViewController.swift in Sources */,
 				6BEA0C13281C4ECA007E7065 /* TodoTaskTableViewCell.swift in Sources */,
 				6BEA0C1A281D9A73007E7065 /* TodoListManager.swift in Sources */,
@@ -437,6 +449,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -493,6 +506,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
@@ -509,6 +523,7 @@
 				DEVELOPMENT_TEAM = 9WV28BAK63;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ToDoList/Application/Info.plist;
+				INFOPLIST_KEY_NSMainStoryboardFile = TabbarController;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = TabbarController;
@@ -539,6 +554,7 @@
 				DEVELOPMENT_TEAM = 9WV28BAK63;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ToDoList/Application/Info.plist;
+				INFOPLIST_KEY_NSMainStoryboardFile = TabbarController;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = TabbarController;

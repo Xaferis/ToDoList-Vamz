@@ -21,30 +21,30 @@ class TodoTaskTableViewCell: UITableViewCell {
     
     //MARK: - Variables
     var buttonDelegate: TodoTaskTableViewCellDelegate?
-    var index: Int?
+    var position: taskPosition?
     var isChecked: Bool?
     
     
     //MARK: - Actions
     @IBAction func modify(_ sender: Any) {
-        guard let index = self.index else { return }
-        buttonDelegate?.didModifyButtonPressed(cellForRowAt: index)
+        guard let position = self.position else { return }
+        buttonDelegate?.didModifyButtonPressed(cellForRowAt: position)
     }
     
     @IBAction func checkButton(_ sender: Any) {
-        guard let index = self.index,
+        guard let position = self.position,
               let isChecked = self.isChecked
         else { return }
         setupButton(isCompleted: !isChecked)
-        buttonDelegate?.didCheckButtonPressed(cellForRowAt: index)
+        buttonDelegate?.didCheckButtonPressed(cellForRowAt: position)
     }
     
     
     //MARK: - Setup
-    func setupCell(with task: Task, at index: Int) {
+    func setupCell(with task: TaskModel, at position: taskPosition) {
         setupButton(isCompleted: task.completed)
         taskLabel.text = task.name
-        self.index = index
+        self.position = position
     }
     
     func setupButton(isCompleted: Bool) {
@@ -63,7 +63,7 @@ class TodoTaskTableViewCell: UITableViewCell {
 // MARK: - Protocol delegate
 protocol TodoTaskTableViewCellDelegate {
     
-    func didModifyButtonPressed(cellForRowAt index: Int)
+    func didModifyButtonPressed(cellForRowAt position: taskPosition)
     
-    func didCheckButtonPressed(cellForRowAt index: Int)
+    func didCheckButtonPressed(cellForRowAt position: taskPosition)
 }

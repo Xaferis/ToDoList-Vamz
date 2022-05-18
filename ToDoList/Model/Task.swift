@@ -7,9 +7,14 @@
 
 import Foundation
 
-struct Task : Codable {
+struct TaskModel : Codable {
     var name: String
     var description: String
     var date: Date
     var completed: Bool
+}
+
+struct Task: Codable {
+    var date: Date
+    var tasks: [TaskModel]
 }
