@@ -50,6 +50,9 @@
                     <tabBarItem key="tabBarItem" systemItem="search" id="yc2-F4-JNz"/>
                     <navigationItem key="navigationItem" title="Search" id="Rro-l5-f3y"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="2Lo-4u-Dcx" id="KnS-w9-nJ4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
