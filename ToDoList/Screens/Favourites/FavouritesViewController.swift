@@ -15,6 +15,12 @@ class FavouritesViewController: UIViewController {
     
     
     @IBAction func addButton(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "AddFavouritesViewController", bundle: nil)
+        if let navigationController = storyboard.instantiateInitialViewController() as? UINavigationController {
+            present(navigationController, animated: true)
+    
+            navigationController.transitioningDelegate = self
+        }
     }
     
     
@@ -51,6 +57,20 @@ extension FavouritesViewController: UITableViewDataSource {
         
         cell.setupCell(with: items[indexPath.row])
         return cell;
+    }
+}
+
+
+//MARK: - Transition Delegate
+
+extension FavouritesViewController: UIViewControllerTransitioningDelegate {
+
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        //print("Koniec popup controlleru")
+        FavouritesManager.shared.loadFavourites {
+            refreshTableView()
+        }
+        return nil
     }
 }
 
