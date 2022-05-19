@@ -12,6 +12,7 @@ class TodoTaskTableViewCell: UITableViewCell {
     // MARK: - Outlets
     @IBOutlet weak var taskLabel: UILabel!
     @IBOutlet weak var checkIconButton: UIButton!
+    @IBOutlet weak var descriptionLabel: UILabel!
     
     
     //MARK: - Static variables
@@ -44,6 +45,7 @@ class TodoTaskTableViewCell: UITableViewCell {
     func setupCell(with task: TaskModel, at position: taskPosition) {
         setupButton(isCompleted: task.completed)
         taskLabel.text = task.name
+        descriptionLabel.text = task.description
         self.position = position
     }
     

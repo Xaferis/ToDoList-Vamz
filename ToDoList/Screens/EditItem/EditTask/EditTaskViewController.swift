@@ -43,10 +43,6 @@ class EditTaskViewController: UIViewController {
         }
     }
     
-    @IBAction func cancel(_ sender: Any) {
-        dismiss(animated: true)
-    }
-    
     
     // MARK: - Lifecycles
     override func viewDidLoad() {

@@ -39,8 +39,7 @@ class FavouritesViewController: UIViewController {
             UINib(
                 nibName: FavouritesTableViewCell.classString,
                 bundle: nil),
-            forCellReuseIdentifier: FavouritesTableViewCell.classString)
-    }
+            forCellReuseIdentifier: FavouritesTableViewCell.classString)    }
 
 }
 
@@ -77,6 +76,26 @@ extension FavouritesViewController: UIViewControllerTransitioningDelegate {
 extension FavouritesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return FavouritesTableViewCell.heightOfCell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "EditFavouritesViewController", bundle: nil)
+        if let navigationController = storyboard.instantiateInitialViewController() as? UINavigationController,
+           let editViewController = navigationController.topViewController as? EditFavouritesViewController {
+            present(navigationController, animated: true)
+            editViewController.setPositionOfCell(at: indexPath.row)
+            navigationController.transitioningDelegate = self
+        }
+    }
+
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            FavouritesManager.shared.deleteFavourite(at: indexPath.row) {
+                self.items.remove(at: indexPath.row)
+                self.tableView.deleteRows(at: [indexPath], with: .fade)
+                self.tableView.reloadData()
+            }
+        }
     }
 }
 

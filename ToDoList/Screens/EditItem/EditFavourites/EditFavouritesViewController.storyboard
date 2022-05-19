@@ -28,13 +28,13 @@
                                             <rect key="frame" x="8" y="0.0" width="398" height="40"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="duG-NP-lBk">
-                                                    <rect key="frame" x="0.0" y="0.0" width="97" height="40"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="67" height="40"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9bb-jE-gQU">
-                                                    <rect key="frame" x="97" y="0.0" width="50" height="40"/>
+                                                    <rect key="frame" x="67" y="0.0" width="50" height="40"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="50" id="pPm-hH-fYK"/>
@@ -42,7 +42,7 @@
                                                     </constraints>
                                                 </view>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Template name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="aUS-ej-ah8">
-                                                    <rect key="frame" x="147" y="0.0" width="251" height="40"/>
+                                                    <rect key="frame" x="117" y="0.0" width="281" height="40"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
@@ -58,15 +58,15 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EKN-0A-FC9">
-                                                    <rect key="frame" x="97" y="0.0" width="50" height="40"/>
+                                                    <rect key="frame" x="97" y="0.0" width="20" height="40"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="N5R-1e-geh"/>
-                                                        <constraint firstAttribute="width" constant="50" id="p05-gU-rjA"/>
+                                                        <constraint firstAttribute="width" constant="20" id="p05-gU-rjA"/>
                                                     </constraints>
                                                 </view>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Template description" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="iQG-9f-fqY">
-                                                    <rect key="frame" x="147" y="0.0" width="251" height="40"/>
+                                                    <rect key="frame" x="117" y="0.0" width="281" height="40"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>

@@ -25,53 +25,55 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pJz-LH-qW9">
-                                            <rect key="frame" x="8" y="0.0" width="398" height="50"/>
+                                            <rect key="frame" x="8" y="0.0" width="398" height="40"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rxd-tA-hmP">
-                                                    <rect key="frame" x="0.0" y="0.0" width="97" height="50"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="97" height="40"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4SM-hR-rUr">
-                                                    <rect key="frame" x="97" y="0.0" width="20" height="50"/>
+                                                    <rect key="frame" x="97" y="0.0" width="20" height="40"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="20" id="4fA-SK-KZ3"/>
+                                                        <constraint firstAttribute="height" constant="40" id="kbh-on-htX"/>
                                                     </constraints>
                                                 </view>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Task name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="aTZ-0m-D9f">
-                                                    <rect key="frame" x="117" y="0.0" width="281" height="50"/>
+                                                    <rect key="frame" x="117" y="0.0" width="281" height="40"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
                                         </stackView>
                                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r0v-Gd-IMR">
-                                            <rect key="frame" x="8" y="58" width="398" height="50"/>
+                                            <rect key="frame" x="8" y="48" width="398" height="40"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ib7-xa-QgZ">
-                                                    <rect key="frame" x="0.0" y="0.0" width="97" height="50"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Description:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ib7-xa-QgZ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="97" height="40"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QEZ-HF-Dwb">
-                                                    <rect key="frame" x="97" y="0.0" width="20" height="50"/>
+                                                    <rect key="frame" x="97" y="0.0" width="20" height="40"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="HC4-JA-1aq"/>
                                                         <constraint firstAttribute="width" constant="20" id="cpj-MR-l9f"/>
                                                     </constraints>
                                                 </view>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Task description" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="90p-nh-xBZ">
-                                                    <rect key="frame" x="117" y="0.0" width="281" height="50"/>
+                                                    <rect key="frame" x="117" y="0.0" width="281" height="40"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
                                         </stackView>
                                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jt4-KH-S4Y">
-                                            <rect key="frame" x="8" y="116" width="398" height="50"/>
+                                            <rect key="frame" x="8" y="96" width="398" height="50"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5RZ-Oa-Aga">
                                                     <rect key="frame" x="0.0" y="0.0" width="40.5" height="50"/>
@@ -92,7 +94,7 @@
                                             </subviews>
                                         </stackView>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMR-FV-Uip">
-                                            <rect key="frame" x="8" y="221" width="398" height="31"/>
+                                            <rect key="frame" x="8" y="201" width="398" height="31"/>
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="filled" title="Save changes"/>
                                             <connections>
@@ -100,7 +102,7 @@
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H81-2S-NnB">
-                                            <rect key="frame" x="8" y="260" width="398" height="31"/>
+                                            <rect key="frame" x="8" y="240" width="398" height="31"/>
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="filled" title="Delete task">
                                                 <color key="baseBackgroundColor" systemColor="systemRedColor"/>
@@ -110,7 +112,7 @@
                                             </connections>
                                         </button>
                                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="feo-c4-Pl9">
-                                            <rect key="frame" x="8" y="174" width="398" height="31"/>
+                                            <rect key="frame" x="8" y="154" width="398" height="31"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Completed:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XvK-w0-3lk">
                                                     <rect key="frame" x="0.0" y="0.0" width="329" height="31"/>
@@ -165,13 +167,7 @@
                             <constraint firstItem="ddQ-5b-dl3" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="lJt-1D-vpX"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Edit Item" id="1Ii-2g-Roy">
-                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="6QO-gz-dc3">
-                            <connections>
-                                <action selector="cancel:" destination="Y6W-OH-hqX" id="FOl-ck-cJh"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Edit Item" id="1Ii-2g-Roy"/>
                     <connections>
                         <outlet property="completedSwitch" destination="Hbd-kO-VT7" id="Y1B-B3-shf"/>
                         <outlet property="datePicker" destination="eIg-po-xat" id="175-7h-3Sr"/>
