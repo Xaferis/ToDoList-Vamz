@@ -18,6 +18,10 @@
 		6B3EC62B283562B7008F475F /* FavouritesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B3EC629283562B7008F475F /* FavouritesTableViewCell.xib */; };
 		6B3EC62D283566A7008F475F /* Favourite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3EC62C283566A7008F475F /* Favourite.swift */; };
 		6B3EC62F283588A2008F475F /* FavouritesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3EC62E283588A2008F475F /* FavouritesManager.swift */; };
+		6B3EC6352835B34F008F475F /* AddFavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3EC6342835B34F008F475F /* AddFavouritesViewController.swift */; };
+		6B3EC6372835B37B008F475F /* AddFavouritesViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B3EC6362835B37B008F475F /* AddFavouritesViewController.storyboard */; };
+		6B3EC6392835BC68008F475F /* EditFavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3EC6382835BC68008F475F /* EditFavouritesViewController.swift */; };
+		6B3EC63B2835BC86008F475F /* EditFavouritesViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B3EC63A2835BC86008F475F /* EditFavouritesViewController.storyboard */; };
 		6BDC93C6281DF01B0033AB52 /* EditTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDC93C5281DF01B0033AB52 /* EditTaskViewController.swift */; };
 		6BEA0BFF281BF934007E7065 /* TabbarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BEA0BFE281BF934007E7065 /* TabbarController.storyboard */; };
 		6BEA0C01281BF9BC007E7065 /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEA0C00281BF9BC007E7065 /* FavouritesViewController.swift */; };
@@ -48,6 +52,10 @@
 		6B3EC629283562B7008F475F /* FavouritesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouritesTableViewCell.xib; sourceTree = "<group>"; };
 		6B3EC62C283566A7008F475F /* Favourite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favourite.swift; sourceTree = "<group>"; };
 		6B3EC62E283588A2008F475F /* FavouritesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesManager.swift; sourceTree = "<group>"; };
+		6B3EC6342835B34F008F475F /* AddFavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFavouritesViewController.swift; sourceTree = "<group>"; };
+		6B3EC6362835B37B008F475F /* AddFavouritesViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddFavouritesViewController.storyboard; sourceTree = "<group>"; };
+		6B3EC6382835BC68008F475F /* EditFavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditFavouritesViewController.swift; sourceTree = "<group>"; };
+		6B3EC63A2835BC86008F475F /* EditFavouritesViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EditFavouritesViewController.storyboard; sourceTree = "<group>"; };
 		6BDC93C5281DF01B0033AB52 /* EditTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskViewController.swift; sourceTree = "<group>"; };
 		6BEA0BFE281BF934007E7065 /* TabbarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabbarController.storyboard; sourceTree = "<group>"; };
 		6BEA0C00281BF9BC007E7065 /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
@@ -146,6 +154,8 @@
 		6B3EC6312835B0E7008F475F /* AddFavourites */ = {
 			isa = PBXGroup;
 			children = (
+				6B3EC6342835B34F008F475F /* AddFavouritesViewController.swift */,
+				6B3EC6362835B37B008F475F /* AddFavouritesViewController.storyboard */,
 			);
 			path = AddFavourites;
 			sourceTree = "<group>";
@@ -162,6 +172,8 @@
 		6B3EC6332835B23B008F475F /* EditFavourites */ = {
 			isa = PBXGroup;
 			children = (
+				6B3EC6382835BC68008F475F /* EditFavouritesViewController.swift */,
+				6B3EC63A2835BC86008F475F /* EditFavouritesViewController.storyboard */,
 			);
 			path = EditFavourites;
 			sourceTree = "<group>";
@@ -348,6 +360,8 @@
 				6BF142B0283460B70018A2F1 /* Localizable.strings in Resources */,
 				6BEA0BFF281BF934007E7065 /* TabbarController.storyboard in Resources */,
 				6BF14299283454810018A2F1 /* SearchViewController.storyboard in Resources */,
+				6B3EC6372835B37B008F475F /* AddFavouritesViewController.storyboard in Resources */,
+				6B3EC63B2835BC86008F475F /* EditFavouritesViewController.storyboard in Resources */,
 				6BEA0C14281C4ECA007E7065 /* TodoTaskTableViewCell.xib in Resources */,
 				6B2FF29927FF222B001FCD4B /* TodolistMainViewController.storyboard in Resources */,
 			);
@@ -362,6 +376,8 @@
 			files = (
 				6BEA0C09281BFA8A007E7065 /* AddTaskViewController.swift in Sources */,
 				6BDC93C6281DF01B0033AB52 /* EditTaskViewController.swift in Sources */,
+				6B3EC6392835BC68008F475F /* EditFavouritesViewController.swift in Sources */,
+				6B3EC6352835B34F008F475F /* AddFavouritesViewController.swift in Sources */,
 				6BEA0C01281BF9BC007E7065 /* FavouritesViewController.swift in Sources */,
 				6B2FF29627FF222B001FCD4B /* TodolistMainViewController.swift in Sources */,
 				6B3EC62428351ADB008F475F /* DateFormatter.swift in Sources */,

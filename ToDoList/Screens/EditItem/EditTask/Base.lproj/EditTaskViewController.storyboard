@@ -166,7 +166,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Edit Item" id="1Ii-2g-Roy">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="cancel" id="6QO-gz-dc3">
+                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="6QO-gz-dc3">
                             <connections>
                                 <action selector="cancel:" destination="Y6W-OH-hqX" id="FOl-ck-cJh"/>
                             </connections>
