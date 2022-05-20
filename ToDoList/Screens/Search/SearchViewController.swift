@@ -19,6 +19,8 @@ class SearchViewController: UIViewController {
     
     private var items: [SearchModel] = []
     
+    private var searchText: String?
+    
     
     //MARK: - Lifecycles
     override func viewDidLoad() {
@@ -30,12 +32,10 @@ class SearchViewController: UIViewController {
                 bundle: nil),
             forCellReuseIdentifier: TodoTaskTableViewCell.classString)
         setupSearchBar()
-        print("Search")
     }
     
     override func viewDidAppear(_ animated: Bool) {
         updateCurrentTasks()
-        print("tu to blbne")
     }
 }
 
@@ -75,6 +75,7 @@ extension SearchViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         let searchBar = searchController.searchBar
         filterContentForSearchText(searchBar.text!)
+        searchText = searchBar.text
     }
 }
 
@@ -96,13 +97,18 @@ extension SearchViewController {
                 items.append(SearchModel(section: section, row: row, task: task))
             }
         }
+        
+        if let searchText = self.searchText {
+            filterContentForSearchText(searchText)
+        }
+        
+        tableView.reloadData()
     }
 }
 
 //MARK: - Cell Delegate
 extension SearchViewController: TodoTaskTableViewCellDelegate {
     func didModifyButtonPressed(cellForRowAt position: taskPosition) {
-        //print(index)
         let storyboard = UIStoryboard(name: "EditTaskViewController", bundle: nil)
         if let viewController = storyboard.instantiateViewController(withIdentifier: "EditTaskViewController") as? EditTaskViewController {
             viewController.taskIndex = position
@@ -117,7 +123,6 @@ extension SearchViewController: TodoTaskTableViewCellDelegate {
                 }
             filteredItems[index!].task.completed = !filteredItems[index!].task.completed
             updateCurrentTasks()
-            tableView.reloadData()
         }
     }
 }
