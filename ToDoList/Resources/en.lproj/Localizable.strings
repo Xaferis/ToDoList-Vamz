@@ -6,4 +6,5 @@
   
 */
 "new_task" = "New task";
-"task_desc" = "This is description";
+"new_template" = "New template";
+"search_text" = "Search task";

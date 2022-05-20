@@ -23,9 +23,11 @@ class EditTaskViewController: UIViewController {
     
     // MARK: - Actions
     @IBAction func saveChanges(_ sender: Any) {
-        if let index = self.taskIndex {
-            let newTask = Task(name: nameTextField.text ?? NSLocalizedString("new_task", comment: "default name, if the name box wasn't filled"),
-                               description: descriptionTextField.text ?? NSLocalizedString("task_desc", comment: "default task description, if the description box wasn't filled"),
+        if let index = self.taskIndex,
+           let text = nameTextField.text {
+            let name = text.isEmpty ? NSLocalizedString("new_task", comment: "default name, if the name box wasn't filled") : text
+            let newTask = Task(name: name,
+                               description: descriptionTextField.text ?? "",
                                date: datePicker.date,
                                completed: completedSwitch.isOn)
             TodoListManager.shared.editTask(newTask: newTask, at: index) {

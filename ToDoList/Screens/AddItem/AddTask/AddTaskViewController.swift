@@ -18,11 +18,16 @@ class AddTaskViewController: UIViewController {
     
     // MARK: - Actions
     @IBAction func saveButton(_ sender: Any) {
-        let newTask = Task(name: taskNameLabel.text ?? NSLocalizedString("new_task", comment: "default name, if the name box wasn't filled"),
-                           description: taskDescriptionLabel.text ?? NSLocalizedString("task_desc", comment: "default task description, if the description box wasn't filled"),
-                           date: datePicker.date, completed: false)
-        TodoListManager.shared.addTask(task: newTask) {
-            dismiss(animated: true)
+    
+        if let text = taskNameLabel.text {
+            let name = text.isEmpty ? NSLocalizedString("new_task", comment: "default name, if the name box wasn't filled") : text
+            let newTask = Task(name: name,
+                               description: taskDescriptionLabel.text ?? "",
+                               date: datePicker.date,
+                               completed: false)
+            TodoListManager.shared.addTask(task: newTask) {
+                dismiss(animated: true)
+            }
         }
     }
 

@@ -20,8 +20,10 @@ class EditFavouritesViewController: UIViewController {
     
     //MARK: - Actions
     @IBAction func saveButton(_ sender: Any) {
-        if let index = self.position {
-            let newItem = FavouriteItem(name: nameTextField.text ?? "Test", description: descriptionTextField.text ?? "Test")
+        if let index = self.position,
+           let text = nameTextField.text {
+            let name = text.isEmpty ? NSLocalizedString("new_template", comment: "default name, if the name box wasn't filled") : text
+            let newItem = FavouriteItem(name: name, description: descriptionTextField.text ?? "")
             FavouritesManager.shared.editFavourite(newItem: newItem, at: index) {
                 dismiss(animated: true)
             }
