@@ -33,7 +33,6 @@ class TodolistMainViewController: UIViewController {
     
     
     //MARK: - Lifecycles
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -121,7 +120,6 @@ extension TodolistMainViewController: UIViewControllerTransitioningDelegate {
 
 
 //MARK: - Cell Delegate
-
 extension TodolistMainViewController: TodoTaskTableViewCellDelegate {
     func didModifyButtonPressed(cellForRowAt position: taskPosition) {
         //print(index)

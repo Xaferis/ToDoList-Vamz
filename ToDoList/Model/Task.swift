@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Task : Codable {
+struct Task: Codable {
     var name: String
     var description: String
     var date: Date
@@ -17,4 +17,10 @@ struct Task : Codable {
 struct DayTask: Codable {
     var date: Date
     var tasks: [Task]
+}
+
+struct SearchModel {
+    var section: Int
+    var row: Int
+    var task: Task
 }

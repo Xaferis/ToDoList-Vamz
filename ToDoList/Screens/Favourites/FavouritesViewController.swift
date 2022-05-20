@@ -43,8 +43,9 @@ class FavouritesViewController: UIViewController {
             UINib(
                 nibName: FavouritesTableViewCell.classString,
                 bundle: nil),
-            forCellReuseIdentifier: FavouritesTableViewCell.classString)    }
-
+            forCellReuseIdentifier: FavouritesTableViewCell.classString)
+        print("Favourites")
+    }
 }
 
 

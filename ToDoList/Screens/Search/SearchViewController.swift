@@ -15,19 +15,11 @@ class SearchViewController: UIViewController {
     
     
     //MARK: - Variables
-    private var filteredItems: [Task] = []
+    private var filteredItems: [SearchModel] = []
     
-    private var items: [Task] = []
+    private var items: [SearchModel] = []
     
-    private var isSearchBarEmpty: Bool {
-      return searchController.searchBar.text?.isEmpty ?? true
-    }
     
-    private var isFiltering: Bool {
-        return searchController.isActive && !isSearchBarEmpty
-    }
-
-
     //MARK: - Lifecycles
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,18 +29,13 @@ class SearchViewController: UIViewController {
                 nibName: TodoTaskTableViewCell.classString,
                 bundle: nil),
             forCellReuseIdentifier: TodoTaskTableViewCell.classString)
-        
-        searchController.searchResultsUpdater = self
-        searchController.obscuresBackgroundDuringPresentation = false
-        searchController.searchBar.placeholder = "Search tasks"
-        navigationItem.searchController = searchController
-        definesPresentationContext = true
+        setupSearchBar()
+        print("Search")
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        TodoListManager.shared.loadTasks {
-            items = TodoListManager.shared.listOfTasks.first?.tasks ?? []
-        }
+        updateCurrentTasks()
+        print("tu to blbne")
     }
 }
 
@@ -57,21 +44,17 @@ class SearchViewController: UIViewController {
 extension SearchViewController {
     func filterContentForSearchText(_ searchText: String) {
         filteredItems = items.filter({ item in
-            return item.name.lowercased().contains(searchText.lowercased())
+            return item.task.name.lowercased().contains(searchText.lowercased())
         })
         tableView.reloadData()
     }
-
 }
 
 
 //MARK: - Data source
 extension SearchViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if isFiltering {
-            return filteredItems.count
-        }
-        return items.count
+        return filteredItems.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -79,13 +62,9 @@ extension SearchViewController: UITableViewDataSource {
         else {
             return UITableViewCell()
         }
-        
-        if isFiltering {
-            taskCell.setupCell(with: filteredItems[indexPath.row], at: (indexPath.section, indexPath.row))
-        } else {
-            taskCell.setupCell(with: items[indexPath.row], at: (indexPath.section, indexPath.row))
-        }
-        //taskCell.buttonDelegate = self
+    
+        taskCell.setupCell(with: filteredItems[indexPath.row].task, at: (filteredItems[indexPath.row].section, filteredItems[indexPath.row].row))
+        taskCell.buttonDelegate = self
         return taskCell
     }
 }
@@ -96,5 +75,49 @@ extension SearchViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         let searchBar = searchController.searchBar
         filterContentForSearchText(searchBar.text!)
+    }
+}
+
+
+//MARK: - Private functions
+extension SearchViewController {
+    private func setupSearchBar() {
+        searchController.searchResultsUpdater = self
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = NSLocalizedString("search_text", comment: "text inside search bar")
+        navigationItem.searchController = searchController
+        definesPresentationContext = true
+    }
+    
+    private func updateCurrentTasks() {
+        items = []
+        for (section, element) in TodoListManager.shared.listOfTasks.enumerated() {
+            for (row, task) in element.tasks.enumerated() {
+                items.append(SearchModel(section: section, row: row, task: task))
+            }
+        }
+    }
+}
+
+//MARK: - Cell Delegate
+extension SearchViewController: TodoTaskTableViewCellDelegate {
+    func didModifyButtonPressed(cellForRowAt position: taskPosition) {
+        //print(index)
+        let storyboard = UIStoryboard(name: "EditTaskViewController", bundle: nil)
+        if let viewController = storyboard.instantiateViewController(withIdentifier: "EditTaskViewController") as? EditTaskViewController {
+            viewController.taskIndex = position
+            navigationController?.pushViewController(viewController, animated: true)
+        }
+    }
+    
+    func didCheckButtonPressed(cellForRowAt position: taskPosition) {
+        TodoListManager.shared.changeStateOfTask(at: position) {
+             let index = filteredItems.firstIndex { item in
+                item.section == position.section && item.row == position.row
+                }
+            filteredItems[index!].task.completed = !filteredItems[index!].task.completed
+            updateCurrentTasks()
+            tableView.reloadData()
+        }
     }
 }
