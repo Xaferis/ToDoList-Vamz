@@ -9,11 +9,15 @@ import UIKit
 
 class FavouritesViewController: UIViewController {
     
+    //MARK: - Outlets
     @IBOutlet weak var tableView: UITableView!
     
+    
+    //MARK: - Variables
     var items: [FavouriteItem] = []
     
     
+    //MARK: - Actions
     @IBAction func addButton(_ sender: Any) {
         let storyboard = UIStoryboard(name: "AddFavouritesViewController", bundle: nil)
         if let navigationController = storyboard.instantiateInitialViewController() as? UINavigationController {
@@ -24,6 +28,7 @@ class FavouritesViewController: UIViewController {
     }
     
     
+    //MARK: - Lifecycles
     override func viewDidAppear(_ animated: Bool) {
         FavouritesManager.shared.loadFavourites {
             refreshTableView()
@@ -43,6 +48,8 @@ class FavouritesViewController: UIViewController {
 
 }
 
+
+//MARK: - Data source
 extension FavouritesViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
@@ -73,6 +80,8 @@ extension FavouritesViewController: UIViewControllerTransitioningDelegate {
     }
 }
 
+
+//MARK: - Delegate
 extension FavouritesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return FavouritesTableViewCell.heightOfCell
@@ -99,6 +108,8 @@ extension FavouritesViewController: UITableViewDelegate {
     }
 }
 
+
+//MARK: - Private functions
 extension FavouritesViewController {
     private func refreshTableView() {
         self.items = FavouritesManager.shared.getFavourites()

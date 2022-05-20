@@ -9,9 +9,13 @@ import UIKit
 
 class SearchViewController: UIViewController {
     
+    //MARK: - Outlets
     @IBOutlet weak var tableView: UITableView!
     let searchController = UISearchController(searchResultsController: nil)
     
+    
+    
+    //MARK: - Variables
     var filteredItems: [TaskModel] = []
     
     var items: [TaskModel] = []
@@ -25,10 +29,12 @@ class SearchViewController: UIViewController {
     }
 
 
+    //MARK: - Lifecycles
     override func viewDidLoad() {
         super.viewDidLoad()
 
         tableView.dataSource = self
+        tableView.delegate = self
         tableView.register(
             UINib(
                 nibName: TodoTaskTableViewCell.classString,
@@ -49,6 +55,11 @@ class SearchViewController: UIViewController {
         }
     }
     
+}
+
+
+// MARK: Functions
+extension SearchViewController {
     func filterContentForSearchText(_ searchText: String) {
         filteredItems = items.filter({ item in
             return item.name.lowercased().contains(searchText.lowercased())
@@ -73,8 +84,7 @@ extension SearchViewController: UITableViewDataSource {
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let taskCell = tableView.dequeueReusableCell(withIdentifier: TodoTaskTableViewCell.classString,
-                                                           for: indexPath) as? TodoTaskTableViewCell
+        guard let taskCell = tableView.dequeueReusableCell(withIdentifier: TodoTaskTableViewCell.classString, for: indexPath) as? TodoTaskTableViewCell
         else {
             return UITableViewCell()
         }
@@ -89,6 +99,16 @@ extension SearchViewController: UITableViewDataSource {
     }
 }
 
+
+//MARK: - Delegate
+extension SearchViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return TodoTaskTableViewCell.heightOfCell
+    }
+}
+
+
+//MARK: - Search result updating
 extension SearchViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         let searchBar = searchController.searchBar

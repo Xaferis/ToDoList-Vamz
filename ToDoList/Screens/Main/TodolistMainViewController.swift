@@ -18,8 +18,7 @@ class TodolistMainViewController: UIViewController {
     
     @IBAction func add(_ sender: Any) {
         let storyboard = UIStoryboard(name: "AddTaskViewController", bundle: nil)
-        if let navigationController = storyboard.instantiateInitialViewController() as? UINavigationController,
-           let addViewController = navigationController.topViewController as? AddTaskViewController {
+        if let navigationController = storyboard.instantiateInitialViewController() as? UINavigationController {
             present(navigationController, animated: true)
     
             navigationController.transitioningDelegate = self
