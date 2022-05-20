@@ -29,9 +29,7 @@ class FavouritesViewController: UIViewController {
     
     //MARK: - Lifecycles
     override func viewDidAppear(_ animated: Bool) {
-        FavouritesManager.shared.loadFavourites {
-            refreshTableView()
-        }
+        refreshTableView()
     }
     
     override func viewDidLoad() {
@@ -44,6 +42,11 @@ class FavouritesViewController: UIViewController {
                 nibName: FavouritesTableViewCell.classString,
                 bundle: nil),
             forCellReuseIdentifier: FavouritesTableViewCell.classString)
+        
+        FavouritesManager.shared.loadFavourites {
+            refreshTableView()
+        }
+        
         print("Favourites")
     }
 }
@@ -71,9 +74,7 @@ extension FavouritesViewController: UITableViewDataSource {
 extension FavouritesViewController: UIViewControllerTransitioningDelegate {
 
     func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        FavouritesManager.shared.loadFavourites {
-            refreshTableView()
-        }
+        refreshTableView()
         return nil
     }
 }

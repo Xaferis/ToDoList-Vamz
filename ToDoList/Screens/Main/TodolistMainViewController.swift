@@ -45,12 +45,14 @@ class TodolistMainViewController: UIViewController {
                 nibName: TodoTaskTableViewCell.classString,
                 bundle: nil),
             forCellReuseIdentifier: TodoTaskTableViewCell.classString)
-        }
-    
-    override func viewDidAppear(_ animated: Bool) {
+        
         TodoListManager.shared.loadTasks {
             refreshTableView()
         }
+        }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        refreshTableView()
     }
 }
 
@@ -111,9 +113,7 @@ extension TodolistMainViewController: UIViewControllerTransitioningDelegate {
 
     func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         //print("Koniec popup controlleru")
-        TodoListManager.shared.loadTasks {
-            refreshTableView()
-        }
+        refreshTableView()
         return nil
     }
 }
