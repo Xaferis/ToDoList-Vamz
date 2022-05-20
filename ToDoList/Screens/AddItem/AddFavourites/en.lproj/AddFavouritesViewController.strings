@@ -1,0 +1,21 @@
+
+/* Class = "UILabel"; text = "Name:"; ObjectID = "9nN-Jb-AME"; */
+"9nN-Jb-AME.text" = "Name:";
+
+/* Class = "UIButton"; configuration.title = "Save to favourites"; ObjectID = "KoR-Wl-HoO"; */
+"KoR-Wl-HoO.configuration.title" = "Save to favourites";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "KoR-Wl-HoO"; */
+"KoR-Wl-HoO.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Template description"; ObjectID = "S3f-P0-hBt"; */
+"S3f-P0-hBt.placeholder" = "Template description";
+
+/* Class = "UITextField"; placeholder = "Template name"; ObjectID = "ZMs-ZU-6Ss"; */
+"ZMs-ZU-6Ss.placeholder" = "Template name";
+
+/* Class = "UINavigationItem"; title = "Add favourite"; ObjectID = "cSs-DQ-iV6"; */
+"cSs-DQ-iV6.title" = "Add favourite";
+
+/* Class = "UILabel"; text = "Description:"; ObjectID = "pHv-5r-ADH"; */
+"pHv-5r-ADH.text" = "Description:";

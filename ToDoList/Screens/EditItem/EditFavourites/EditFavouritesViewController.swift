@@ -9,12 +9,16 @@ import UIKit
 
 class EditFavouritesViewController: UIViewController {
 
+    //MARK: - Outlets
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var descriptionTextField: UITextField!
     
-    private var position: Int?
+    
+    //MARK: - Variables
+    var position: Int?
     
     
+    //MARK: - Actions
     @IBAction func saveButton(_ sender: Any) {
         if let index = self.position {
             let newItem = FavouriteItem(name: nameTextField.text ?? "Test", description: descriptionTextField.text ?? "Test")
@@ -37,20 +41,13 @@ class EditFavouritesViewController: UIViewController {
     }
     
     
+    //MARK: - Lifecycles
     override func viewDidLoad() {
         super.viewDidLoad()
         if let index = self.position {
-            let item = FavouritesManager.shared.getFavourites()[index]
-            nameTextField.text = item.getName()
-            descriptionTextField.text = item.getDescription()
+            let item = FavouritesManager.shared.favourites[index]
+            nameTextField.text = item.name
+            descriptionTextField.text = item.description
         }
-    }
-    
-}
-
-extension EditFavouritesViewController {
-
-    func setPositionOfCell(at index: Int) {
-        self.position = index
     }
 }

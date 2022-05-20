@@ -14,7 +14,7 @@ class FavouritesViewController: UIViewController {
     
     
     //MARK: - Variables
-    var items: [FavouriteItem] = []
+    private var items: [FavouriteItem] = []
     
     
     //MARK: - Actions
@@ -22,7 +22,6 @@ class FavouritesViewController: UIViewController {
         let storyboard = UIStoryboard(name: "AddFavouritesViewController", bundle: nil)
         if let navigationController = storyboard.instantiateInitialViewController() as? UINavigationController {
             present(navigationController, animated: true)
-    
             navigationController.transitioningDelegate = self
         }
     }
@@ -68,11 +67,9 @@ extension FavouritesViewController: UITableViewDataSource {
 
 
 //MARK: - Transition Delegate
-
 extension FavouritesViewController: UIViewControllerTransitioningDelegate {
 
     func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        //print("Koniec popup controlleru")
         FavouritesManager.shared.loadFavourites {
             refreshTableView()
         }
@@ -83,16 +80,12 @@ extension FavouritesViewController: UIViewControllerTransitioningDelegate {
 
 //MARK: - Delegate
 extension FavouritesViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return FavouritesTableViewCell.heightOfCell
-    }
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: "EditFavouritesViewController", bundle: nil)
         if let navigationController = storyboard.instantiateInitialViewController() as? UINavigationController,
            let editViewController = navigationController.topViewController as? EditFavouritesViewController {
             present(navigationController, animated: true)
-            editViewController.setPositionOfCell(at: indexPath.row)
+            editViewController.position = indexPath.row
             navigationController.transitioningDelegate = self
         }
     }
@@ -112,7 +105,7 @@ extension FavouritesViewController: UITableViewDelegate {
 //MARK: - Private functions
 extension FavouritesViewController {
     private func refreshTableView() {
-        self.items = FavouritesManager.shared.getFavourites()
+        self.items = FavouritesManager.shared.favourites
         self.tableView.reloadData()
     }
 }

@@ -7,20 +7,7 @@
 
 import Foundation
 
-class FavouriteItem : Codable {
-    private var name: String
-    private var description: String
-    
-    init (name: String, description: String) {
-        self.name = name
-        self.description = description
-    }
-    
-    func getName() -> String {
-        return self.name
-    }
-    
-    func getDescription() -> String {
-        return self.description
-    }
+struct FavouriteItem : Codable {
+    var name: String
+    var description: String
 }

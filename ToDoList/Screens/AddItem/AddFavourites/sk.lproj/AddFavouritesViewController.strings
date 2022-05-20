@@ -1,0 +1,21 @@
+
+/* Class = "UILabel"; text = "Name:"; ObjectID = "9nN-Jb-AME"; */
+"9nN-Jb-AME.text" = "Názov:";
+
+/* Class = "UIButton"; configuration.title = "Save to favourites"; ObjectID = "KoR-Wl-HoO"; */
+"KoR-Wl-HoO.configuration.title" = "Uložiť";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "KoR-Wl-HoO"; */
+"KoR-Wl-HoO.normalTitle" = "Uložiť";
+
+/* Class = "UITextField"; placeholder = "Template description"; ObjectID = "S3f-P0-hBt"; */
+"S3f-P0-hBt.placeholder" = "Popis šablóny";
+
+/* Class = "UITextField"; placeholder = "Template name"; ObjectID = "ZMs-ZU-6Ss"; */
+"ZMs-ZU-6Ss.placeholder" = "Názov šablóny";
+
+/* Class = "UINavigationItem"; title = "Add favourite"; ObjectID = "cSs-DQ-iV6"; */
+"cSs-DQ-iV6.title" = "Pridať šablónu";
+
+/* Class = "UILabel"; text = "Description:"; ObjectID = "pHv-5r-ADH"; */
+"pHv-5r-ADH.text" = "Popis:";

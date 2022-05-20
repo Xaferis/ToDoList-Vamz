@@ -24,7 +24,7 @@ class EditTaskViewController: UIViewController {
     // MARK: - Actions
     @IBAction func saveChanges(_ sender: Any) {
         if let index = self.taskIndex {
-            let newTask = TaskModel(name: nameTextField.text ?? NSLocalizedString("new_task", comment: "default name, if the name box wasn't filled"),
+            let newTask = Task(name: nameTextField.text ?? NSLocalizedString("new_task", comment: "default name, if the name box wasn't filled"),
                                description: descriptionTextField.text ?? NSLocalizedString("task_desc", comment: "default task description, if the description box wasn't filled"),
                                date: datePicker.date,
                                completed: completedSwitch.isOn)
@@ -49,12 +49,11 @@ class EditTaskViewController: UIViewController {
         super.viewDidLoad()
 
         if let index = self.taskIndex {
-            let task = TodoListManager.shared.getTasks()[index.section].tasks[index.row]
+            let task = TodoListManager.shared.listOfTasks[index.section].tasks[index.row]
             nameTextField.text = task.name
             descriptionTextField.text = task.description
             datePicker.date = task.date
             completedSwitch.isOn = task.completed
-            
         }
     }
 }

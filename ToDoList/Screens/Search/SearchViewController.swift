@@ -11,20 +11,19 @@ class SearchViewController: UIViewController {
     
     //MARK: - Outlets
     @IBOutlet weak var tableView: UITableView!
-    let searchController = UISearchController(searchResultsController: nil)
-    
+    private let searchController = UISearchController(searchResultsController: nil)
     
     
     //MARK: - Variables
-    var filteredItems: [TaskModel] = []
+    private var filteredItems: [Task] = []
     
-    var items: [TaskModel] = []
+    private var items: [Task] = []
     
-    var isSearchBarEmpty: Bool {
+    private var isSearchBarEmpty: Bool {
       return searchController.searchBar.text?.isEmpty ?? true
     }
     
-    var isFiltering: Bool {
+    private var isFiltering: Bool {
         return searchController.isActive && !isSearchBarEmpty
     }
 
@@ -32,9 +31,7 @@ class SearchViewController: UIViewController {
     //MARK: - Lifecycles
     override func viewDidLoad() {
         super.viewDidLoad()
-
         tableView.dataSource = self
-        tableView.delegate = self
         tableView.register(
             UINib(
                 nibName: TodoTaskTableViewCell.classString,
@@ -46,15 +43,13 @@ class SearchViewController: UIViewController {
         searchController.searchBar.placeholder = "Search tasks"
         navigationItem.searchController = searchController
         definesPresentationContext = true
-        
     }
     
     override func viewDidAppear(_ animated: Bool) {
         TodoListManager.shared.loadTasks {
-            items = TodoListManager.shared.getTasks()[0].tasks
+            items = TodoListManager.shared.listOfTasks.first?.tasks ?? []
         }
     }
-    
 }
 
 
@@ -64,24 +59,20 @@ extension SearchViewController {
         filteredItems = items.filter({ item in
             return item.name.lowercased().contains(searchText.lowercased())
         })
-        
         tableView.reloadData()
-        
     }
 
 }
 
-//MARK: - Data source
 
+//MARK: - Data source
 extension SearchViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if isFiltering {
             return filteredItems.count
         }
-        
         return items.count
     }
-    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let taskCell = tableView.dequeueReusableCell(withIdentifier: TodoTaskTableViewCell.classString, for: indexPath) as? TodoTaskTableViewCell
@@ -96,14 +87,6 @@ extension SearchViewController: UITableViewDataSource {
         }
         //taskCell.buttonDelegate = self
         return taskCell
-    }
-}
-
-
-//MARK: - Delegate
-extension SearchViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return TodoTaskTableViewCell.heightOfCell
     }
 }
 

@@ -1,0 +1,27 @@
+
+/* Class = "UIButton"; configuration.title = "Save"; ObjectID = "SfM-NI-V3T"; */
+"SfM-NI-V3T.configuration.title" = "Save";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "SfM-NI-V3T"; */
+"SfM-NI-V3T.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Template name"; ObjectID = "aUS-ej-ah8"; */
+"aUS-ej-ah8.placeholder" = "Template name";
+
+/* Class = "UILabel"; text = "Name:"; ObjectID = "duG-NP-lBk"; */
+"duG-NP-lBk.text" = "Name:";
+
+/* Class = "UILabel"; text = "Description:"; ObjectID = "gZV-ih-A9P"; */
+"gZV-ih-A9P.text" = "Description:";
+
+/* Class = "UITextField"; placeholder = "Template description"; ObjectID = "iQG-9f-fqY"; */
+"iQG-9f-fqY.placeholder" = "Template description";
+
+/* Class = "UINavigationItem"; title = "Edit favourite"; ObjectID = "ob7-41-vXd"; */
+"ob7-41-vXd.title" = "Edit favourite";
+
+/* Class = "UIButton"; configuration.title = "Delete"; ObjectID = "qT5-mr-hIa"; */
+"qT5-mr-hIa.configuration.title" = "Delete";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "qT5-mr-hIa"; */
+"qT5-mr-hIa.normalTitle" = "Button";

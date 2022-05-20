@@ -27,9 +27,9 @@ class TodolistMainViewController: UIViewController {
     
     //MARK: - Variables
     
-    var items: [Task] = []
+    private var items: [DayTask] = []
     
-    let dateFormatter = DateFormatter()
+    private let dateFormatter = DateFormatter()
     
     
     //MARK: - Lifecycles
@@ -103,10 +103,6 @@ extension TodolistMainViewController: UITableViewDelegate {
             }
         }
     }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return TodoTaskTableViewCell.heightOfCell
-    }
 }
 
 
@@ -134,14 +130,6 @@ extension TodolistMainViewController: TodoTaskTableViewCellDelegate {
             viewController.taskIndex = position
             navigationController?.pushViewController(viewController, animated: true)
         }
-        
-//        if let navigationController = storyboard.instantiateInitialViewController() {
-//            present(navigationController, animated: true)
-//            navigationController.transitioningDelegate = self
-//        }
-//        let vc = self.storyboard?.instantiateViewController(withIdentifier: "EditItemViewController1")
-//       // vc.taskIndex = index
-        
     }
     
     func didCheckButtonPressed(cellForRowAt position: taskPosition) {
@@ -154,7 +142,7 @@ extension TodolistMainViewController: TodoTaskTableViewCellDelegate {
 // MARK: - Refresh table view
 extension TodolistMainViewController {
     private func refreshTableView() {
-        self.items = TodoListManager.shared.getTasks()
+        self.items = TodoListManager.shared.listOfTasks
         self.tableView.reloadData()
     }
 }

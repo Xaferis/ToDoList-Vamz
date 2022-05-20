@@ -17,7 +17,6 @@ class TodoTaskTableViewCell: UITableViewCell {
     
     //MARK: - Static variables
     static var classString: String { String(describing: TodoTaskTableViewCell.self) }
-    static let heightOfCell: CGFloat = 55
     
     
     //MARK: - Variables
@@ -42,7 +41,7 @@ class TodoTaskTableViewCell: UITableViewCell {
     
     
     //MARK: - Setup
-    func setupCell(with task: TaskModel, at position: taskPosition) {
+    func setupCell(with task: Task, at position: taskPosition) {
         setupButton(isCompleted: task.completed)
         taskLabel.text = task.name
         descriptionLabel.text = task.description

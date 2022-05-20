@@ -17,13 +17,12 @@ class FavouritesTableViewCell: UITableViewCell {
     
     //MARK: - Static
     static var classString: String { String(describing: FavouritesTableViewCell.self) }
-    static let heightOfCell: CGFloat = 55
     
     
     //MARK: - Setup
     func setupCell(with item: FavouriteItem) {
-        nameLabel.text = item.getName()
-        descriptionLabel.text = item.getDescription()
+        nameLabel.text = item.name
+        descriptionLabel.text = item.description
     }
     
 }

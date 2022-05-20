@@ -16,7 +16,7 @@ class FavouritesManager {
     //MARK: - Variables
     static let shared = FavouritesManager()
     
-    private var favourites: [FavouriteItem] = [] {
+    var favourites: [FavouriteItem] = [] {
         didSet {
             saveFavourites()
         }
@@ -30,10 +30,6 @@ class FavouritesManager {
         if let encodedData = try? JSONEncoder().encode(favourites) {
             UserDefaults.standard.set(encodedData, forKey: UDkey)
         }
-    }
-    
-    func getFavourites() -> [FavouriteItem] {
-        return self.favourites
     }
     
     func loadFavourites(completion: FavouritesCompletionHandler) {

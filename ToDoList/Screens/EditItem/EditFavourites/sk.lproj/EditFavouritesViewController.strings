@@ -1,0 +1,27 @@
+
+/* Class = "UIButton"; configuration.title = "Save"; ObjectID = "SfM-NI-V3T"; */
+"SfM-NI-V3T.configuration.title" = "Uložiť";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "SfM-NI-V3T"; */
+"SfM-NI-V3T.normalTitle" = "Uložiť";
+
+/* Class = "UITextField"; placeholder = "Template name"; ObjectID = "aUS-ej-ah8"; */
+"aUS-ej-ah8.placeholder" = "Názov šablóny";
+
+/* Class = "UILabel"; text = "Name:"; ObjectID = "duG-NP-lBk"; */
+"duG-NP-lBk.text" = "Názov:";
+
+/* Class = "UILabel"; text = "Description:"; ObjectID = "gZV-ih-A9P"; */
+"gZV-ih-A9P.text" = "Popis:";
+
+/* Class = "UITextField"; placeholder = "Template description"; ObjectID = "iQG-9f-fqY"; */
+"iQG-9f-fqY.placeholder" = "Popis šablóny";
+
+/* Class = "UINavigationItem"; title = "Edit favourite"; ObjectID = "ob7-41-vXd"; */
+"ob7-41-vXd.title" = "Upraviť šablónu";
+
+/* Class = "UIButton"; configuration.title = "Delete"; ObjectID = "qT5-mr-hIa"; */
+"qT5-mr-hIa.configuration.title" = "Vymazať";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "qT5-mr-hIa"; */
+"qT5-mr-hIa.normalTitle" = "Vymazať";
