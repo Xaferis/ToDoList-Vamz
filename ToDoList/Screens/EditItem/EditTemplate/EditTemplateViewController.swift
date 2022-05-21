@@ -16,10 +16,13 @@ class EditTemplateViewController: UIViewController {
     
     //MARK: - Variables
     var position: Int?
+    private let hapticFeedback = UIImpactFeedbackGenerator()
+
     
     
     //MARK: - Actions
     @IBAction func saveButton(_ sender: Any) {
+        hapticFeedback.impactOccurred()
         if let index = self.position,
            let text = nameTextField.text {
             let name = text.isEmpty ? NSLocalizedString("new_template", comment: "default name, if the name box wasn't filled") : text
@@ -31,6 +34,7 @@ class EditTemplateViewController: UIViewController {
     }
     
     @IBAction func deleteButton(_ sender: Any) {
+        hapticFeedback.impactOccurred()
         if let index = self.position {
             TemplatesManager.shared.deleteTemplate(at: index) {
                 dismiss(animated: true)
@@ -39,6 +43,7 @@ class EditTemplateViewController: UIViewController {
     }
     
     @IBAction func cancel(_ sender: Any) {
+        hapticFeedback.impactOccurred()
         dismiss(animated: true)
     }
     

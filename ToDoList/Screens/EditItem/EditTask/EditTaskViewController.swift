@@ -19,10 +19,13 @@ class EditTaskViewController: UIViewController {
     
     // MARK: - Variables
     var taskIndex: taskPosition?
+    private let hapticFeedback = UIImpactFeedbackGenerator()
+
     
     
     // MARK: - Actions
     @IBAction func saveChanges(_ sender: Any) {
+        hapticFeedback.impactOccurred()
         if let index = self.taskIndex,
            let text = nameTextField.text {
             let name = text.isEmpty ? NSLocalizedString("new_task", comment: "default name, if the name box wasn't filled") : text
@@ -38,6 +41,7 @@ class EditTaskViewController: UIViewController {
     }
     
     @IBAction func deleteTask(_ sender: Any) {
+        hapticFeedback.impactOccurred()
         if let index = self.taskIndex {
             TodoListManager.shared.deleteTask(at: index) {
                 dismiss(animated: true)
@@ -46,6 +50,7 @@ class EditTaskViewController: UIViewController {
     }
     
     @IBAction func chooseTemplate(_ sender: Any) {
+        hapticFeedback.impactOccurred()
         let storyboard = UIStoryboard(name: "TemplatePickViewController", bundle: nil)
         if let viewController = storyboard.instantiateViewController(withIdentifier: "TemplatePickViewController") as? TemplatePickViewController {
             navigationController?.pushViewController(viewController, animated: true)
@@ -56,6 +61,7 @@ class EditTaskViewController: UIViewController {
         }
     }
     @IBAction func cancel(_ sender: Any) {
+        hapticFeedback.impactOccurred()
         dismiss(animated: true)
     }
     

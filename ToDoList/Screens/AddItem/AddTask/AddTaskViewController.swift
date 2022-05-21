@@ -10,15 +10,19 @@ import UIKit
 class AddTaskViewController: UIViewController {
 
     
-    // MARK: - Variables
+    // MARK: - Outlets
     @IBOutlet weak var taskNameLabel: UITextField!
     @IBOutlet weak var taskDescriptionLabel: UITextField!
     @IBOutlet weak var datePicker: UIDatePicker!
     
     
+    //MARK: - Variables
+    private let hapticFeedback = UIImpactFeedbackGenerator()
+    
+    
     // MARK: - Actions
     @IBAction func saveButton(_ sender: Any) {
-    
+        hapticFeedback.impactOccurred()
         if let text = taskNameLabel.text {
             let name = text.isEmpty ? NSLocalizedString("new_task", comment: "default name, if the name box wasn't filled") : text
             let newTask = Task(name: name,
@@ -32,9 +36,12 @@ class AddTaskViewController: UIViewController {
     }
 
     @IBAction func cancel(_ sender: Any) {
+        hapticFeedback.impactOccurred()
         dismiss(animated: true)
     }
+    
     @IBAction func chooseTemplate(_ sender: Any) {
+        hapticFeedback.impactOccurred()
         let storyboard = UIStoryboard(name: "TemplatePickViewController", bundle: nil)
         if let viewController = storyboard.instantiateViewController(withIdentifier: "TemplatePickViewController") as? TemplatePickViewController {
             navigationController?.pushViewController(viewController, animated: true)

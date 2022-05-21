@@ -24,10 +24,14 @@ class TodoTaskTableViewCell: UITableViewCell {
     var position: taskPosition?
     var isChecked: Bool?
     
+    private let editButtonFeedback = UIImpactFeedbackGenerator();
+    private let checkButtonFeedback = UINotificationFeedbackGenerator();
+    
     
     //MARK: - Actions
     @IBAction func modify(_ sender: Any) {
         guard let position = self.position else { return }
+        editButtonFeedback.impactOccurred()
         buttonDelegate?.didModifyButtonPressed(cellForRowAt: position)
     }
     
@@ -36,6 +40,7 @@ class TodoTaskTableViewCell: UITableViewCell {
               let isChecked = self.isChecked
         else { return }
         setupButton(isCompleted: !isChecked)
+        checkButtonFeedback.notificationOccurred(.success)
         buttonDelegate?.didCheckButtonPressed(cellForRowAt: position)
     }
     

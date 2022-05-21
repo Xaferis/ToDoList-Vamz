@@ -15,10 +15,12 @@ class TemplatesViewController: UIViewController {
     
     //MARK: - Variables
     private var items: [TemplateItem] = []
+    private let hapticFeedback = UIImpactFeedbackGenerator()
     
     
     //MARK: - Actions
     @IBAction func addButton(_ sender: Any) {
+        hapticFeedback.impactOccurred()
         let storyboard = UIStoryboard(name: "AddTemplateViewController", bundle: nil)
         if let navigationController = storyboard.instantiateInitialViewController() as? UINavigationController {
             present(navigationController, animated: true)
@@ -81,6 +83,7 @@ extension TemplatesViewController: UIViewControllerTransitioningDelegate {
 //MARK: - Delegate
 extension TemplatesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        hapticFeedback.impactOccurred()
         let storyboard = UIStoryboard(name: "EditTemplateViewController", bundle: nil)
         if let navigationController = storyboard.instantiateInitialViewController() as? UINavigationController,
            let editViewController = navigationController.topViewController as? EditTemplateViewController {

@@ -16,7 +16,7 @@ class TemplatePickViewController: UIViewController {
     
     //MARK: - Variables
     private var items: [TemplateItem] = []
-    
+    private let hapticFeedback = UIImpactFeedbackGenerator()
     var completionHandler: ((TemplateItem) -> Void)?
     
     
@@ -60,6 +60,7 @@ extension TemplatePickViewController: UITableViewDataSource {
 //MARK: - Delegate
 extension TemplatePickViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        hapticFeedback.impactOccurred()
         completionHandler?(items[indexPath.row])
         navigationController?.popViewController(animated: true)
 

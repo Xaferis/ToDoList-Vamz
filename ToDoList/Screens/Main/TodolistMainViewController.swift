@@ -17,6 +17,7 @@ class TodolistMainViewController: UIViewController {
     //MARK: - Actions
     
     @IBAction func add(_ sender: Any) {
+        hapticFeedback.impactOccurred()
         let storyboard = UIStoryboard(name: "AddTaskViewController", bundle: nil)
         if let navigationController = storyboard.instantiateInitialViewController() as? UINavigationController {
             present(navigationController, animated: true)
@@ -27,8 +28,8 @@ class TodolistMainViewController: UIViewController {
     //MARK: - Variables
     
     private var items: [DayTask] = []
-    
     private let dateFormatter = DateFormatter()
+    private let hapticFeedback = UIImpactFeedbackGenerator()
     
     
     //MARK: - Lifecycles
