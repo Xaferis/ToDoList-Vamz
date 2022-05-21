@@ -75,7 +75,7 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SfM-NI-V3T">
                                             <rect key="frame" x="8" y="104" width="398" height="31"/>
                                             <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="filled" title="Save"/>
+                                            <buttonConfiguration key="configuration" style="filled" title="Save" cornerStyle="large"/>
                                             <connections>
                                                 <action selector="saveButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="pwV-H3-p64"/>
                                             </connections>
@@ -84,7 +84,7 @@
                                             <rect key="frame" x="8" y="143" width="398" height="31"/>
                                             <color key="tintColor" systemColor="systemRedColor"/>
                                             <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="filled" title="Delete"/>
+                                            <buttonConfiguration key="configuration" style="filled" title="Delete" cornerStyle="large"/>
                                             <connections>
                                                 <action selector="deleteButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="dzN-0Y-2mr"/>
                                             </connections>

@@ -75,7 +75,7 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KoR-Wl-HoO">
                                             <rect key="frame" x="8" y="104" width="398" height="31"/>
                                             <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="filled" title="Save template"/>
+                                            <buttonConfiguration key="configuration" style="filled" title="Save template" cornerStyle="large"/>
                                             <connections>
                                                 <action selector="saveButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="jU0-RJ-Me9"/>
                                             </connections>
