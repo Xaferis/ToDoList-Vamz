@@ -34,4 +34,15 @@ class AddTaskViewController: UIViewController {
     @IBAction func cancel(_ sender: Any) {
         dismiss(animated: true)
     }
+    @IBAction func chooseTemplate(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "TemplatePickViewController", bundle: nil)
+        if let viewController = storyboard.instantiateViewController(withIdentifier: "TemplatePickViewController") as? TemplatePickViewController {
+            navigationController?.pushViewController(viewController, animated: true)
+            
+            viewController.completionHandler = { template in
+                print(template.name)
+            }
+            
+        }
+    }
 }

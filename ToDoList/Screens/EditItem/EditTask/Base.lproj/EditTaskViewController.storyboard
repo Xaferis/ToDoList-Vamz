@@ -132,6 +132,15 @@
                                                 </switch>
                                             </subviews>
                                         </stackView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4lx-jA-Zid">
+                                            <rect key="frame" x="8" y="279" width="398" height="31"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="tinted" title="Choose from template" cornerStyle="capsule" titleAlignment="automatic"/>
+                                            <connections>
+                                                <action selector="chooseTemplate:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="dzH-B9-5fT"/>
+                                                <action selector="saveChanges:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="hYZ-aI-MES"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
@@ -144,13 +153,16 @@
                                         <constraint firstAttribute="trailing" secondItem="Jt4-KH-S4Y" secondAttribute="trailing" constant="8" id="FRk-Pl-SSK"/>
                                         <constraint firstItem="feo-c4-Pl9" firstAttribute="top" secondItem="Jt4-KH-S4Y" secondAttribute="bottom" constant="8" id="GaR-H5-CG1"/>
                                         <constraint firstAttribute="trailing" secondItem="pJz-LH-qW9" secondAttribute="trailing" constant="8" id="P71-Ce-FjZ"/>
+                                        <constraint firstItem="4lx-jA-Zid" firstAttribute="leading" secondItem="SP8-e8-5zZ" secondAttribute="leading" constant="8" id="Que-H3-B7b"/>
                                         <constraint firstItem="uMR-FV-Uip" firstAttribute="top" secondItem="feo-c4-Pl9" secondAttribute="bottom" constant="16" id="UUQ-eI-cd1"/>
+                                        <constraint firstItem="4lx-jA-Zid" firstAttribute="top" secondItem="H81-2S-NnB" secondAttribute="bottom" constant="8" id="Utf-4E-LCl"/>
                                         <constraint firstItem="pJz-LH-qW9" firstAttribute="leading" secondItem="SP8-e8-5zZ" secondAttribute="leading" constant="8" id="VOC-Qh-ppx"/>
                                         <constraint firstItem="4SM-hR-rUr" firstAttribute="trailing" secondItem="QEZ-HF-Dwb" secondAttribute="trailing" id="VQo-C8-gZh"/>
                                         <constraint firstItem="r0v-Gd-IMR" firstAttribute="leading" secondItem="SP8-e8-5zZ" secondAttribute="leading" constant="8" id="XWr-p8-1MS"/>
                                         <constraint firstItem="Jt4-KH-S4Y" firstAttribute="top" secondItem="r0v-Gd-IMR" secondAttribute="bottom" constant="8" id="ceA-X7-VZC"/>
                                         <constraint firstAttribute="trailing" secondItem="feo-c4-Pl9" secondAttribute="trailing" constant="8" id="dFU-UU-xrA"/>
                                         <constraint firstItem="r0v-Gd-IMR" firstAttribute="top" secondItem="pJz-LH-qW9" secondAttribute="bottom" constant="8" id="fx4-gZ-4mA"/>
+                                        <constraint firstAttribute="trailing" secondItem="4lx-jA-Zid" secondAttribute="trailing" constant="8" id="gOR-9Q-Uez"/>
                                         <constraint firstItem="uMR-FV-Uip" firstAttribute="leading" secondItem="SP8-e8-5zZ" secondAttribute="leading" constant="8" id="lZS-iG-ahR"/>
                                         <constraint firstItem="Jt4-KH-S4Y" firstAttribute="leading" secondItem="SP8-e8-5zZ" secondAttribute="leading" constant="8" id="lpD-61-54x"/>
                                         <constraint firstItem="H81-2S-NnB" firstAttribute="leading" secondItem="SP8-e8-5zZ" secondAttribute="leading" constant="8" id="y10-DV-8Ae"/>

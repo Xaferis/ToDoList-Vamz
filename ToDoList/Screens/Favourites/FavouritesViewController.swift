@@ -46,8 +46,6 @@ class FavouritesViewController: UIViewController {
         FavouritesManager.shared.loadFavourites {
             refreshTableView()
         }
-        
-        print("Favourites")
     }
 }
 
