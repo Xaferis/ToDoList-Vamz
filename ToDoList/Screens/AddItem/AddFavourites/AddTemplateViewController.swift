@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AddFavouritesViewController: UIViewController {
+class AddTemplateViewController: UIViewController {
 
     
     //MARK: - Outlets
@@ -19,8 +19,8 @@ class AddFavouritesViewController: UIViewController {
     @IBAction func saveButton(_ sender: Any) {
         if let text = nameTextField.text {
             let name = text.isEmpty ? NSLocalizedString("new_template", comment: "default name, if the name box wasn't filled") : text
-            let newItem = FavouriteItem(name: name, description: descriptionTextField.text ?? "")
-            FavouritesManager.shared.addFavourite(item: newItem) {
+            let newItem = TemplateItem(name: name, description: descriptionTextField.text ?? "")
+            TemplatesManager.shared.addTemplate(item: newItem) {
                 dismiss(animated: true)
             }
         }

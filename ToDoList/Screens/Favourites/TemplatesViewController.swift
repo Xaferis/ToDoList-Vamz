@@ -1,5 +1,5 @@
 //
-//  FavouritesViewController.swift
+//  TemplatesViewController.swift
 //  ToDoList
 //
 //  Created by Matúš Mištrik on 29/04/2022.
@@ -7,19 +7,19 @@
 
 import UIKit
 
-class FavouritesViewController: UIViewController {
+class TemplatesViewController: UIViewController {
     
     //MARK: - Outlets
     @IBOutlet weak var tableView: UITableView!
     
     
     //MARK: - Variables
-    private var items: [FavouriteItem] = []
+    private var items: [TemplateItem] = []
     
     
     //MARK: - Actions
     @IBAction func addButton(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "AddFavouritesViewController", bundle: nil)
+        let storyboard = UIStoryboard(name: "AddTemplateViewController", bundle: nil)
         if let navigationController = storyboard.instantiateInitialViewController() as? UINavigationController {
             present(navigationController, animated: true)
             navigationController.transitioningDelegate = self
@@ -39,11 +39,11 @@ class FavouritesViewController: UIViewController {
         tableView.delegate = self
         tableView.register(
             UINib(
-                nibName: FavouritesTableViewCell.classString,
+                nibName: TemplatesTableViewCell.classString,
                 bundle: nil),
-            forCellReuseIdentifier: FavouritesTableViewCell.classString)
+            forCellReuseIdentifier: TemplatesTableViewCell.classString)
         
-        FavouritesManager.shared.loadFavourites {
+        TemplatesManager.shared.loadTemplates {
             refreshTableView()
         }
     }
@@ -51,13 +51,13 @@ class FavouritesViewController: UIViewController {
 
 
 //MARK: - Data source
-extension FavouritesViewController: UITableViewDataSource {
+extension TemplatesViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: FavouritesTableViewCell.classString, for: indexPath) as? FavouritesTableViewCell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: TemplatesTableViewCell.classString, for: indexPath) as? TemplatesTableViewCell
         else {
             return UITableViewCell()
         }
@@ -69,7 +69,7 @@ extension FavouritesViewController: UITableViewDataSource {
 
 
 //MARK: - Transition Delegate
-extension FavouritesViewController: UIViewControllerTransitioningDelegate {
+extension TemplatesViewController: UIViewControllerTransitioningDelegate {
 
     func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         refreshTableView()
@@ -79,11 +79,11 @@ extension FavouritesViewController: UIViewControllerTransitioningDelegate {
 
 
 //MARK: - Delegate
-extension FavouritesViewController: UITableViewDelegate {
+extension TemplatesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let storyboard = UIStoryboard(name: "EditFavouritesViewController", bundle: nil)
+        let storyboard = UIStoryboard(name: "EditTemplateViewController", bundle: nil)
         if let navigationController = storyboard.instantiateInitialViewController() as? UINavigationController,
-           let editViewController = navigationController.topViewController as? EditFavouritesViewController {
+           let editViewController = navigationController.topViewController as? EditTemplateViewController {
             present(navigationController, animated: true)
             editViewController.position = indexPath.row
             navigationController.transitioningDelegate = self
@@ -92,7 +92,7 @@ extension FavouritesViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            FavouritesManager.shared.deleteFavourite(at: indexPath.row) {
+            TemplatesManager.shared.deleteTemplate(at: indexPath.row) {
                 self.items.remove(at: indexPath.row)
                 self.tableView.deleteRows(at: [indexPath], with: .fade)
                 self.tableView.reloadData()
@@ -103,9 +103,9 @@ extension FavouritesViewController: UITableViewDelegate {
 
 
 //MARK: - Private functions
-extension FavouritesViewController {
+extension TemplatesViewController {
     private func refreshTableView() {
-        self.items = FavouritesManager.shared.favourites
+        self.items = TemplatesManager.shared.templates
         self.tableView.reloadData()
     }
 }

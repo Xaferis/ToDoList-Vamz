@@ -36,10 +36,10 @@
             </objects>
             <point key="canvasLocation" x="212" y="-356"/>
         </scene>
-        <!--FavourtiesViewController-->
+        <!--TemplatesViewController-->
         <scene sceneID="Ba8-19-hm1">
             <objects>
-                <viewControllerPlaceholder storyboardName="FavourtiesViewController" id="epY-0e-739" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="TemplatesViewController" id="epY-0e-739" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="18v-sX-I5W"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mzv-Ey-R4D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

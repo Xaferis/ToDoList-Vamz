@@ -14,26 +14,26 @@
 		6B2FF29E27FF222C001FCD4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B2FF29C27FF222C001FCD4B /* LaunchScreen.storyboard */; };
 		6B3EC62428351ADB008F475F /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3EC62328351ADB008F475F /* DateFormatter.swift */; };
 		6B3EC62628352D49008F475F /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3EC62528352D49008F475F /* Date.swift */; };
-		6B3EC62A283562B7008F475F /* FavouritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3EC628283562B7008F475F /* FavouritesTableViewCell.swift */; };
-		6B3EC62B283562B7008F475F /* FavouritesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B3EC629283562B7008F475F /* FavouritesTableViewCell.xib */; };
-		6B3EC62D283566A7008F475F /* Favourite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3EC62C283566A7008F475F /* Favourite.swift */; };
-		6B3EC62F283588A2008F475F /* FavouritesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3EC62E283588A2008F475F /* FavouritesManager.swift */; };
-		6B3EC6352835B34F008F475F /* AddFavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3EC6342835B34F008F475F /* AddFavouritesViewController.swift */; };
-		6B3EC6392835BC68008F475F /* EditFavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3EC6382835BC68008F475F /* EditFavouritesViewController.swift */; };
-		6B4ED4F52837B196005A6A73 /* EditFavouritesViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B4ED4F72837B196005A6A73 /* EditFavouritesViewController.storyboard */; };
-		6B4ED4FC2837B23F005A6A73 /* AddFavouritesViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B4ED4FE2837B23F005A6A73 /* AddFavouritesViewController.storyboard */; };
+		6B3EC62A283562B7008F475F /* TemplatesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3EC628283562B7008F475F /* TemplatesTableViewCell.swift */; };
+		6B3EC62B283562B7008F475F /* TemplatesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B3EC629283562B7008F475F /* TemplatesTableViewCell.xib */; };
+		6B3EC62D283566A7008F475F /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3EC62C283566A7008F475F /* Template.swift */; };
+		6B3EC62F283588A2008F475F /* TemplatesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3EC62E283588A2008F475F /* TemplatesManager.swift */; };
+		6B3EC6352835B34F008F475F /* AddTemplateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3EC6342835B34F008F475F /* AddTemplateViewController.swift */; };
+		6B3EC6392835BC68008F475F /* EditTemplateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3EC6382835BC68008F475F /* EditTemplateViewController.swift */; };
+		6B4ED4F52837B196005A6A73 /* EditTemplateViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B4ED4F72837B196005A6A73 /* EditTemplateViewController.storyboard */; };
+		6B4ED4FC2837B23F005A6A73 /* AddTemplateViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B4ED4FE2837B23F005A6A73 /* AddTemplateViewController.storyboard */; };
 		6B4ED50528384F3C005A6A73 /* TemplatePickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4ED50428384F3C005A6A73 /* TemplatePickViewController.swift */; };
 		6B4ED50728384F58005A6A73 /* TemplatePickViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B4ED50628384F58005A6A73 /* TemplatePickViewController.storyboard */; };
 		6BDC93C6281DF01B0033AB52 /* EditTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDC93C5281DF01B0033AB52 /* EditTaskViewController.swift */; };
 		6BEA0BFF281BF934007E7065 /* TabbarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BEA0BFE281BF934007E7065 /* TabbarController.storyboard */; };
-		6BEA0C01281BF9BC007E7065 /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEA0C00281BF9BC007E7065 /* FavouritesViewController.swift */; };
+		6BEA0C01281BF9BC007E7065 /* TemplatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEA0C00281BF9BC007E7065 /* TemplatesViewController.swift */; };
 		6BEA0C05281BFA2B007E7065 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEA0C04281BFA2B007E7065 /* SearchViewController.swift */; };
 		6BEA0C09281BFA8A007E7065 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEA0C08281BFA8A007E7065 /* AddTaskViewController.swift */; };
 		6BEA0C13281C4ECA007E7065 /* TodoTaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEA0C11281C4ECA007E7065 /* TodoTaskTableViewCell.swift */; };
 		6BEA0C14281C4ECA007E7065 /* TodoTaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BEA0C12281C4ECA007E7065 /* TodoTaskTableViewCell.xib */; };
 		6BEA0C17281D8C02007E7065 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEA0C16281D8C02007E7065 /* Task.swift */; };
 		6BEA0C1A281D9A73007E7065 /* TodoListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEA0C19281D9A73007E7065 /* TodoListManager.swift */; };
-		6BF14292283453FA0018A2F1 /* FavourtiesViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BF14294283453FA0018A2F1 /* FavourtiesViewController.storyboard */; };
+		6BF14292283453FA0018A2F1 /* TemplatesViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BF14294283453FA0018A2F1 /* TemplatesViewController.storyboard */; };
 		6BF14299283454810018A2F1 /* SearchViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BF1429B283454810018A2F1 /* SearchViewController.storyboard */; };
 		6BF142A0283454D70018A2F1 /* AddTaskViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BF142A2283454D70018A2F1 /* AddTaskViewController.storyboard */; };
 		6BF142A7283455890018A2F1 /* EditTaskViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BF142A9283455890018A2F1 /* EditTaskViewController.storyboard */; };
@@ -50,23 +50,23 @@
 		6B2FF29F27FF222C001FCD4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B3EC62328351ADB008F475F /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		6B3EC62528352D49008F475F /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
-		6B3EC628283562B7008F475F /* FavouritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesTableViewCell.swift; sourceTree = "<group>"; };
-		6B3EC629283562B7008F475F /* FavouritesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouritesTableViewCell.xib; sourceTree = "<group>"; };
-		6B3EC62C283566A7008F475F /* Favourite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favourite.swift; sourceTree = "<group>"; };
-		6B3EC62E283588A2008F475F /* FavouritesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesManager.swift; sourceTree = "<group>"; };
-		6B3EC6342835B34F008F475F /* AddFavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFavouritesViewController.swift; sourceTree = "<group>"; };
-		6B3EC6382835BC68008F475F /* EditFavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditFavouritesViewController.swift; sourceTree = "<group>"; };
-		6B4ED4F62837B196005A6A73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/EditFavouritesViewController.storyboard; sourceTree = "<group>"; };
-		6B4ED4F92837B199005A6A73 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/EditFavouritesViewController.strings; sourceTree = "<group>"; };
-		6B4ED4FB2837B19A005A6A73 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/EditFavouritesViewController.strings; sourceTree = "<group>"; };
-		6B4ED4FD2837B23F005A6A73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/AddFavouritesViewController.storyboard; sourceTree = "<group>"; };
-		6B4ED5002837B241005A6A73 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/AddFavouritesViewController.strings; sourceTree = "<group>"; };
-		6B4ED5022837B26F005A6A73 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/AddFavouritesViewController.strings; sourceTree = "<group>"; };
+		6B3EC628283562B7008F475F /* TemplatesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplatesTableViewCell.swift; sourceTree = "<group>"; };
+		6B3EC629283562B7008F475F /* TemplatesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TemplatesTableViewCell.xib; sourceTree = "<group>"; };
+		6B3EC62C283566A7008F475F /* Template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Template.swift; sourceTree = "<group>"; };
+		6B3EC62E283588A2008F475F /* TemplatesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplatesManager.swift; sourceTree = "<group>"; };
+		6B3EC6342835B34F008F475F /* AddTemplateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTemplateViewController.swift; sourceTree = "<group>"; };
+		6B3EC6382835BC68008F475F /* EditTemplateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTemplateViewController.swift; sourceTree = "<group>"; };
+		6B4ED4F62837B196005A6A73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/EditTemplateViewController.storyboard; sourceTree = "<group>"; };
+		6B4ED4F92837B199005A6A73 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/EditTemplateViewController.strings; sourceTree = "<group>"; };
+		6B4ED4FB2837B19A005A6A73 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/EditTemplateViewController.strings; sourceTree = "<group>"; };
+		6B4ED4FD2837B23F005A6A73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/AddTemplateViewController.storyboard; sourceTree = "<group>"; };
+		6B4ED5002837B241005A6A73 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/AddTemplateViewController.strings; sourceTree = "<group>"; };
+		6B4ED5022837B26F005A6A73 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/AddTemplateViewController.strings; sourceTree = "<group>"; };
 		6B4ED50428384F3C005A6A73 /* TemplatePickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplatePickViewController.swift; sourceTree = "<group>"; };
 		6B4ED50628384F58005A6A73 /* TemplatePickViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TemplatePickViewController.storyboard; sourceTree = "<group>"; };
 		6BDC93C5281DF01B0033AB52 /* EditTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskViewController.swift; sourceTree = "<group>"; };
 		6BEA0BFE281BF934007E7065 /* TabbarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabbarController.storyboard; sourceTree = "<group>"; };
-		6BEA0C00281BF9BC007E7065 /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
+		6BEA0C00281BF9BC007E7065 /* TemplatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplatesViewController.swift; sourceTree = "<group>"; };
 		6BEA0C04281BFA2B007E7065 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		6BEA0C08281BFA8A007E7065 /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
 		6BEA0C11281C4ECA007E7065 /* TodoTaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTaskTableViewCell.swift; sourceTree = "<group>"; };
@@ -76,9 +76,9 @@
 		6BF142882834510B0018A2F1 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		6BF142892834510B0018A2F1 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/TodolistMainViewController.strings; sourceTree = "<group>"; };
 		6BF1428B283451550018A2F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/TodolistMainViewController.strings; sourceTree = "<group>"; };
-		6BF14293283453FA0018A2F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/FavourtiesViewController.storyboard; sourceTree = "<group>"; };
-		6BF14296283453FE0018A2F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/FavourtiesViewController.strings; sourceTree = "<group>"; };
-		6BF142982834542D0018A2F1 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/FavourtiesViewController.strings; sourceTree = "<group>"; };
+		6BF14293283453FA0018A2F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TemplatesViewController.storyboard; sourceTree = "<group>"; };
+		6BF14296283453FE0018A2F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/TemplatesViewController.strings; sourceTree = "<group>"; };
+		6BF142982834542D0018A2F1 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/TemplatesViewController.strings; sourceTree = "<group>"; };
 		6BF1429A283454810018A2F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SearchViewController.storyboard; sourceTree = "<group>"; };
 		6BF1429D283454890018A2F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SearchViewController.strings; sourceTree = "<group>"; };
 		6BF1429F2834548A0018A2F1 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/SearchViewController.strings; sourceTree = "<group>"; };
@@ -144,8 +144,8 @@
 		6B3EC62728356299008F475F /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				6B3EC628283562B7008F475F /* FavouritesTableViewCell.swift */,
-				6B3EC629283562B7008F475F /* FavouritesTableViewCell.xib */,
+				6B3EC628283562B7008F475F /* TemplatesTableViewCell.swift */,
+				6B3EC629283562B7008F475F /* TemplatesTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -162,8 +162,8 @@
 		6B3EC6312835B0E7008F475F /* AddFavourites */ = {
 			isa = PBXGroup;
 			children = (
-				6B3EC6342835B34F008F475F /* AddFavouritesViewController.swift */,
-				6B4ED4FE2837B23F005A6A73 /* AddFavouritesViewController.storyboard */,
+				6B3EC6342835B34F008F475F /* AddTemplateViewController.swift */,
+				6B4ED4FE2837B23F005A6A73 /* AddTemplateViewController.storyboard */,
 			);
 			path = AddFavourites;
 			sourceTree = "<group>";
@@ -180,8 +180,8 @@
 		6B3EC6332835B23B008F475F /* EditFavourites */ = {
 			isa = PBXGroup;
 			children = (
-				6B3EC6382835BC68008F475F /* EditFavouritesViewController.swift */,
-				6B4ED4F72837B196005A6A73 /* EditFavouritesViewController.storyboard */,
+				6B3EC6382835BC68008F475F /* EditTemplateViewController.swift */,
+				6B4ED4F72837B196005A6A73 /* EditTemplateViewController.storyboard */,
 			);
 			path = EditFavourites;
 			sourceTree = "<group>";
@@ -259,8 +259,8 @@
 			children = (
 				6B4ED50328384EC6005A6A73 /* Picker */,
 				6B3EC62728356299008F475F /* Cell */,
-				6BEA0C00281BF9BC007E7065 /* FavouritesViewController.swift */,
-				6BF14294283453FA0018A2F1 /* FavourtiesViewController.storyboard */,
+				6BEA0C00281BF9BC007E7065 /* TemplatesViewController.swift */,
+				6BF14294283453FA0018A2F1 /* TemplatesViewController.storyboard */,
 			);
 			path = Favourites;
 			sourceTree = "<group>";
@@ -296,7 +296,7 @@
 			isa = PBXGroup;
 			children = (
 				6BEA0C16281D8C02007E7065 /* Task.swift */,
-				6B3EC62C283566A7008F475F /* Favourite.swift */,
+				6B3EC62C283566A7008F475F /* Template.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -305,7 +305,7 @@
 			isa = PBXGroup;
 			children = (
 				6BEA0C19281D9A73007E7065 /* TodoListManager.swift */,
-				6B3EC62E283588A2008F475F /* FavouritesManager.swift */,
+				6B3EC62E283588A2008F475F /* TemplatesManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -370,17 +370,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B2FF29E27FF222C001FCD4B /* LaunchScreen.storyboard in Resources */,
-				6B3EC62B283562B7008F475F /* FavouritesTableViewCell.xib in Resources */,
-				6BF14292283453FA0018A2F1 /* FavourtiesViewController.storyboard in Resources */,
+				6B3EC62B283562B7008F475F /* TemplatesTableViewCell.xib in Resources */,
+				6BF14292283453FA0018A2F1 /* TemplatesViewController.storyboard in Resources */,
 				6BF142A0283454D70018A2F1 /* AddTaskViewController.storyboard in Resources */,
 				6B2FF29B27FF222C001FCD4B /* Assets.xcassets in Resources */,
 				6BF142A7283455890018A2F1 /* EditTaskViewController.storyboard in Resources */,
 				6BF142B0283460B70018A2F1 /* Localizable.strings in Resources */,
 				6BEA0BFF281BF934007E7065 /* TabbarController.storyboard in Resources */,
 				6BF14299283454810018A2F1 /* SearchViewController.storyboard in Resources */,
-				6B4ED4FC2837B23F005A6A73 /* AddFavouritesViewController.storyboard in Resources */,
+				6B4ED4FC2837B23F005A6A73 /* AddTemplateViewController.storyboard in Resources */,
 				6B4ED50728384F58005A6A73 /* TemplatePickViewController.storyboard in Resources */,
-				6B4ED4F52837B196005A6A73 /* EditFavouritesViewController.storyboard in Resources */,
+				6B4ED4F52837B196005A6A73 /* EditTemplateViewController.storyboard in Resources */,
 				6BEA0C14281C4ECA007E7065 /* TodoTaskTableViewCell.xib in Resources */,
 				6B2FF29927FF222B001FCD4B /* TodolistMainViewController.storyboard in Resources */,
 			);
@@ -395,19 +395,19 @@
 			files = (
 				6BEA0C09281BFA8A007E7065 /* AddTaskViewController.swift in Sources */,
 				6BDC93C6281DF01B0033AB52 /* EditTaskViewController.swift in Sources */,
-				6B3EC6392835BC68008F475F /* EditFavouritesViewController.swift in Sources */,
-				6B3EC6352835B34F008F475F /* AddFavouritesViewController.swift in Sources */,
-				6BEA0C01281BF9BC007E7065 /* FavouritesViewController.swift in Sources */,
+				6B3EC6392835BC68008F475F /* EditTemplateViewController.swift in Sources */,
+				6B3EC6352835B34F008F475F /* AddTemplateViewController.swift in Sources */,
+				6BEA0C01281BF9BC007E7065 /* TemplatesViewController.swift in Sources */,
 				6B2FF29627FF222B001FCD4B /* TodolistMainViewController.swift in Sources */,
 				6B3EC62428351ADB008F475F /* DateFormatter.swift in Sources */,
 				6BEA0C05281BFA2B007E7065 /* SearchViewController.swift in Sources */,
 				6BEA0C13281C4ECA007E7065 /* TodoTaskTableViewCell.swift in Sources */,
-				6B3EC62F283588A2008F475F /* FavouritesManager.swift in Sources */,
+				6B3EC62F283588A2008F475F /* TemplatesManager.swift in Sources */,
 				6BEA0C1A281D9A73007E7065 /* TodoListManager.swift in Sources */,
 				6B3EC62628352D49008F475F /* Date.swift in Sources */,
 				6B4ED50528384F3C005A6A73 /* TemplatePickViewController.swift in Sources */,
-				6B3EC62A283562B7008F475F /* FavouritesTableViewCell.swift in Sources */,
-				6B3EC62D283566A7008F475F /* Favourite.swift in Sources */,
+				6B3EC62A283562B7008F475F /* TemplatesTableViewCell.swift in Sources */,
+				6B3EC62D283566A7008F475F /* Template.swift in Sources */,
 				6BEA0C17281D8C02007E7065 /* Task.swift in Sources */,
 				6B2FF29227FF222B001FCD4B /* AppDelegate.swift in Sources */,
 			);
@@ -435,34 +435,34 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		6B4ED4F72837B196005A6A73 /* EditFavouritesViewController.storyboard */ = {
+		6B4ED4F72837B196005A6A73 /* EditTemplateViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				6B4ED4F62837B196005A6A73 /* Base */,
 				6B4ED4F92837B199005A6A73 /* en */,
 				6B4ED4FB2837B19A005A6A73 /* sk */,
 			);
-			name = EditFavouritesViewController.storyboard;
+			name = EditTemplateViewController.storyboard;
 			sourceTree = "<group>";
 		};
-		6B4ED4FE2837B23F005A6A73 /* AddFavouritesViewController.storyboard */ = {
+		6B4ED4FE2837B23F005A6A73 /* AddTemplateViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				6B4ED4FD2837B23F005A6A73 /* Base */,
 				6B4ED5002837B241005A6A73 /* en */,
 				6B4ED5022837B26F005A6A73 /* sk */,
 			);
-			name = AddFavouritesViewController.storyboard;
+			name = AddTemplateViewController.storyboard;
 			sourceTree = "<group>";
 		};
-		6BF14294283453FA0018A2F1 /* FavourtiesViewController.storyboard */ = {
+		6BF14294283453FA0018A2F1 /* TemplatesViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				6BF14293283453FA0018A2F1 /* Base */,
 				6BF14296283453FE0018A2F1 /* en */,
 				6BF142982834542D0018A2F1 /* sk */,
 			);
-			name = FavourtiesViewController.storyboard;
+			name = TemplatesViewController.storyboard;
 			sourceTree = "<group>";
 		};
 		6BF1429B283454810018A2F1 /* SearchViewController.storyboard */ = {

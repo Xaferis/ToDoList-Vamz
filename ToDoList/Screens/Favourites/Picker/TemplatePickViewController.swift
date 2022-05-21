@@ -15,9 +15,9 @@ class TemplatePickViewController: UIViewController {
     
     
     //MARK: - Variables
-    private var items: [FavouriteItem] = []
+    private var items: [TemplateItem] = []
     
-    var completionHandler: ((FavouriteItem) -> Void)?
+    var completionHandler: ((TemplateItem) -> Void)?
     
     
     //MARK: - Lifecycles
@@ -28,11 +28,11 @@ class TemplatePickViewController: UIViewController {
         tableView.delegate = self
         tableView.register(
             UINib(
-                nibName: FavouritesTableViewCell.classString,
+                nibName: TemplatesTableViewCell.classString,
                 bundle: nil),
-            forCellReuseIdentifier: FavouritesTableViewCell.classString)
+            forCellReuseIdentifier: TemplatesTableViewCell.classString)
         
-        FavouritesManager.shared.loadFavourites {
+        TemplatesManager.shared.loadTemplates {
             refreshTableView()
         }
     }
@@ -46,7 +46,7 @@ extension TemplatePickViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: FavouritesTableViewCell.classString, for: indexPath) as? FavouritesTableViewCell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: TemplatesTableViewCell.classString, for: indexPath) as? TemplatesTableViewCell
         else {
             return UITableViewCell()
         }
@@ -70,7 +70,7 @@ extension TemplatePickViewController: UITableViewDelegate {
 //MARK: - Private functions
 extension TemplatePickViewController {
     private func refreshTableView() {
-        self.items = FavouritesManager.shared.favourites
+        self.items = TemplatesManager.shared.templates
         self.tableView.reloadData()
     }
 }

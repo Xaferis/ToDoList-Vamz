@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FavouritesTableViewCell: UITableViewCell {
+class TemplatesTableViewCell: UITableViewCell {
     
     
     //MARK: - Variables
@@ -16,11 +16,11 @@ class FavouritesTableViewCell: UITableViewCell {
     
     
     //MARK: - Static
-    static var classString: String { String(describing: FavouritesTableViewCell.self) }
+    static var classString: String { String(describing: TemplatesTableViewCell.self) }
     
     
     //MARK: - Setup
-    func setupCell(with item: FavouriteItem) {
+    func setupCell(with item: TemplateItem) {
         nameLabel.text = item.name
         descriptionLabel.text = item.description
     }

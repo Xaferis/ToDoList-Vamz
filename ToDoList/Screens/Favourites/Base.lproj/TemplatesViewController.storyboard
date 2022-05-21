@@ -25,10 +25,10 @@
             </objects>
             <point key="canvasLocation" x="-794" y="129"/>
         </scene>
-        <!--Favourites-->
+        <!--Templates-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="FavouritesViewController" customModule="ToDoList" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="TemplatesViewController" customModule="ToDoList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,7 +48,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Favourites" image="star.fill" catalog="system" id="oYf-fH-yye"/>
-                    <navigationItem key="navigationItem" title="Favourites" id="9qC-jS-DR3">
+                    <navigationItem key="navigationItem" title="Templates" id="9qC-jS-DR3">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="3JT-CU-qJ5">
                             <connections>
                                 <action selector="addButton:" destination="Y6W-OH-hqX" id="bJZ-ti-3aD"/>

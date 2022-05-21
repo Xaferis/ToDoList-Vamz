@@ -7,7 +7,7 @@
 
 import UIKit
 
-class EditFavouritesViewController: UIViewController {
+class EditTemplateViewController: UIViewController {
 
     //MARK: - Outlets
     @IBOutlet weak var nameTextField: UITextField!
@@ -23,8 +23,8 @@ class EditFavouritesViewController: UIViewController {
         if let index = self.position,
            let text = nameTextField.text {
             let name = text.isEmpty ? NSLocalizedString("new_template", comment: "default name, if the name box wasn't filled") : text
-            let newItem = FavouriteItem(name: name, description: descriptionTextField.text ?? "")
-            FavouritesManager.shared.editFavourite(newItem: newItem, at: index) {
+            let newItem = TemplateItem(name: name, description: descriptionTextField.text ?? "")
+            TemplatesManager.shared.editTemplate(newItem: newItem, at: index) {
                 dismiss(animated: true)
             }
         }
@@ -32,7 +32,7 @@ class EditFavouritesViewController: UIViewController {
     
     @IBAction func deleteButton(_ sender: Any) {
         if let index = self.position {
-            FavouritesManager.shared.deleteFavourite(at: index) {
+            TemplatesManager.shared.deleteTemplate(at: index) {
                 dismiss(animated: true)
             }
         }
@@ -47,7 +47,7 @@ class EditFavouritesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         if let index = self.position {
-            let item = FavouritesManager.shared.favourites[index]
+            let item = TemplatesManager.shared.templates[index]
             nameTextField.text = item.name
             descriptionTextField.text = item.description
         }

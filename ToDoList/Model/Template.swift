@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct FavouriteItem : Codable {
+struct TemplateItem : Codable {
     var name: String
     var description: String
 }

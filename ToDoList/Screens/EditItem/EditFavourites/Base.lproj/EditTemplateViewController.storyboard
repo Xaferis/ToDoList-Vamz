@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Edit favourite-->
+        <!--Edit template-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="EditFavouritesViewController" id="Y6W-OH-hqX" customClass="EditFavouritesViewController" customModule="ToDoList" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EditTemplateViewController" id="Y6W-OH-hqX" customClass="EditTemplateViewController" customModule="ToDoList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -118,7 +118,7 @@
                             <constraint firstAttribute="bottom" secondItem="qRQ-ef-o9I" secondAttribute="bottom" id="nGG-Ne-PgK"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Edit favourite" id="ob7-41-vXd">
+                    <navigationItem key="navigationItem" title="Edit template" id="ob7-41-vXd">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="heA-Nu-b5a">
                             <connections>
                                 <action selector="cancel:" destination="Y6W-OH-hqX" id="aOJ-Wq-cwb"/>
