@@ -31,13 +31,7 @@
                             <constraint firstItem="1WQ-hs-Eio" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="ocs-7M-YIu"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Templates" id="YNS-pp-cqe">
-                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="VSG-Mj-b5b">
-                            <connections>
-                                <action selector="cancel:" destination="Y6W-OH-hqX" id="OpV-xY-OzD"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Templates" id="YNS-pp-cqe"/>
                     <connections>
                         <outlet property="tableView" destination="1WQ-hs-Eio" id="nx3-On-2Bq"/>
                     </connections>

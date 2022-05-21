@@ -138,7 +138,6 @@
                                             <buttonConfiguration key="configuration" style="tinted" title="Choose from template" cornerStyle="capsule" titleAlignment="automatic"/>
                                             <connections>
                                                 <action selector="chooseTemplate:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="dzH-B9-5fT"/>
-                                                <action selector="saveChanges:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="hYZ-aI-MES"/>
                                             </connections>
                                         </button>
                                     </subviews>
@@ -179,7 +178,13 @@
                             <constraint firstItem="ddQ-5b-dl3" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="lJt-1D-vpX"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Edit Item" id="1Ii-2g-Roy"/>
+                    <navigationItem key="navigationItem" title="Edit Item" id="1Ii-2g-Roy">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="N61-3z-76o">
+                            <connections>
+                                <action selector="cancel:" destination="Y6W-OH-hqX" id="pFU-hT-4Al"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="completedSwitch" destination="Hbd-kO-VT7" id="Y1B-B3-shf"/>
                         <outlet property="datePicker" destination="eIg-po-xat" id="175-7h-3Sr"/>

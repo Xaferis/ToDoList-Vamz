@@ -20,7 +20,6 @@ class TodolistMainViewController: UIViewController {
         let storyboard = UIStoryboard(name: "AddTaskViewController", bundle: nil)
         if let navigationController = storyboard.instantiateInitialViewController() as? UINavigationController {
             present(navigationController, animated: true)
-    
             navigationController.transitioningDelegate = self
         }
     }
@@ -112,7 +111,6 @@ extension TodolistMainViewController: UITableViewDelegate {
 extension TodolistMainViewController: UIViewControllerTransitioningDelegate {
 
     func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        //print("Koniec popup controlleru")
         refreshTableView()
         return nil
     }
@@ -122,11 +120,12 @@ extension TodolistMainViewController: UIViewControllerTransitioningDelegate {
 //MARK: - Cell Delegate
 extension TodolistMainViewController: TodoTaskTableViewCellDelegate {
     func didModifyButtonPressed(cellForRowAt position: taskPosition) {
-        //print(index)
         let storyboard = UIStoryboard(name: "EditTaskViewController", bundle: nil)
-        if let viewController = storyboard.instantiateViewController(withIdentifier: "EditTaskViewController") as? EditTaskViewController {
-            viewController.taskIndex = position
-            navigationController?.pushViewController(viewController, animated: true)
+        if let navigationController = storyboard.instantiateInitialViewController() as? UINavigationController,
+           let editViewController = navigationController.topViewController as? EditTaskViewController {
+            present(navigationController, animated: true)
+            editViewController.taskIndex = position
+            navigationController.transitioningDelegate = self
         }
     }
     

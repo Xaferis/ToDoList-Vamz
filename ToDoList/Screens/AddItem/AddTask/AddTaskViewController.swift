@@ -38,11 +38,10 @@ class AddTaskViewController: UIViewController {
         let storyboard = UIStoryboard(name: "TemplatePickViewController", bundle: nil)
         if let viewController = storyboard.instantiateViewController(withIdentifier: "TemplatePickViewController") as? TemplatePickViewController {
             navigationController?.pushViewController(viewController, animated: true)
-            
             viewController.completionHandler = { template in
-                print(template.name)
+                self.taskNameLabel.text = template.name
+                self.taskDescriptionLabel.text = template.description
             }
-            
         }
     }
 }

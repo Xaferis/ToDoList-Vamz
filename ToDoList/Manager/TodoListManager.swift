@@ -103,6 +103,7 @@ class TodoListManager {
         completion()
     }
     
+    
     //MARK: - Move to completed section
     private func moveToCompletedSection(newTask: Task) {
         if let lastTask = self.listOfTasks.last,
@@ -114,6 +115,8 @@ class TodoListManager {
             } else {
                 self.listOfTasks.append(DayTask(date: completedDate, tasks: [newTask]))
             }
+        } else {
+            self.listOfTasks.append(DayTask(date: TodoListManager.completedDate!, tasks: [newTask]))
         }
         saveTasks()
     }

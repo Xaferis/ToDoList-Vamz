@@ -31,7 +31,7 @@ class EditTaskViewController: UIViewController {
                                date: datePicker.date,
                                completed: completedSwitch.isOn)
             TodoListManager.shared.editTask(newTask: newTask, at: index) {
-                navigationController?.popViewController(animated: true)
+                dismiss(animated: true)
             }
         }
         
@@ -40,7 +40,7 @@ class EditTaskViewController: UIViewController {
     @IBAction func deleteTask(_ sender: Any) {
         if let index = self.taskIndex {
             TodoListManager.shared.deleteTask(at: index) {
-                navigationController?.popViewController(animated: true)
+                dismiss(animated: true)
             }
         }
     }
@@ -49,12 +49,14 @@ class EditTaskViewController: UIViewController {
         let storyboard = UIStoryboard(name: "TemplatePickViewController", bundle: nil)
         if let viewController = storyboard.instantiateViewController(withIdentifier: "TemplatePickViewController") as? TemplatePickViewController {
             navigationController?.pushViewController(viewController, animated: true)
-            
-//            viewController.completionHandler = { template in
-//                print(template.name)
-//            }
-            
+            viewController.completionHandler = { template in
+                self.nameTextField.text = template.name
+                self.descriptionTextField.text = template.description
+            }
         }
+    }
+    @IBAction func cancel(_ sender: Any) {
+        dismiss(animated: true)
     }
     
     // MARK: - Lifecycles

@@ -13,9 +13,6 @@ class TemplatePickViewController: UIViewController {
     //MARK: Outlets
     @IBOutlet weak var tableView: UITableView!
     
-    @IBAction func cancel(_ sender: Any) {
-        navigationController?.popViewController(animated: true)
-    }
     
     //MARK: - Variables
     private var items: [FavouriteItem] = []

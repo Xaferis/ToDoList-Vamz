@@ -109,10 +109,13 @@ extension SearchViewController {
 //MARK: - Cell Delegate
 extension SearchViewController: TodoTaskTableViewCellDelegate {
     func didModifyButtonPressed(cellForRowAt position: taskPosition) {
+        definesPresentationContext = false
         let storyboard = UIStoryboard(name: "EditTaskViewController", bundle: nil)
-        if let viewController = storyboard.instantiateViewController(withIdentifier: "EditTaskViewController") as? EditTaskViewController {
-            viewController.taskIndex = position
-            navigationController?.pushViewController(viewController, animated: true)
+        if let navigationController = storyboard.instantiateInitialViewController() as? UINavigationController,
+           let editViewController = navigationController.topViewController as? EditTaskViewController {
+            present(navigationController, animated: true)
+            editViewController.taskIndex = position
+            navigationController.transitioningDelegate = self
         }
     }
     
@@ -124,5 +127,15 @@ extension SearchViewController: TodoTaskTableViewCellDelegate {
             filteredItems[index!].task.completed = !filteredItems[index!].task.completed
             updateCurrentTasks()
         }
+    }
+}
+
+
+//MARK: - Transition Delegate
+extension SearchViewController: UIViewControllerTransitioningDelegate {
+
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        updateCurrentTasks()
+        return nil
     }
 }
