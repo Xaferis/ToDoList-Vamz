@@ -3,10 +3,10 @@
 "9nN-Jb-AME.text" = "Názov:";
 
 /* Class = "UIButton"; configuration.title = "Save to favourites"; ObjectID = "KoR-Wl-HoO"; */
-"KoR-Wl-HoO.configuration.title" = "Uložiť";
+"KoR-Wl-HoO.configuration.title" = "Uložiť šablónu";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "KoR-Wl-HoO"; */
-"KoR-Wl-HoO.normalTitle" = "Uložiť";
+"KoR-Wl-HoO.normalTitle" = "Uložiť šablónu";
 
 /* Class = "UITextField"; placeholder = "Template description"; ObjectID = "S3f-P0-hBt"; */
 "S3f-P0-hBt.placeholder" = "Popis šablóny";

@@ -114,17 +114,17 @@
                                             </subviews>
                                         </stackView>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="shk-hd-DJN">
-                                            <rect key="frame" x="8" y="132.5" width="398" height="31"/>
+                                            <rect key="frame" x="8" y="171.5" width="398" height="31"/>
                                             <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="filled" title="Save task"/>
+                                            <buttonConfiguration key="configuration" style="filled" title="Save task" cornerStyle="large"/>
                                             <connections>
                                                 <action selector="saveButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="79h-HI-QqN"/>
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Idd-AZ-f8V">
-                                            <rect key="frame" x="8" y="171.5" width="398" height="31"/>
+                                            <rect key="frame" x="8" y="124.5" width="398" height="31"/>
                                             <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="gray" title="Templates"/>
+                                            <buttonConfiguration key="configuration" style="tinted" title="Choose template" cornerStyle="large"/>
                                             <connections>
                                                 <action selector="chooseTemplate:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="K6A-Dj-YBn"/>
                                             </connections>
@@ -135,18 +135,18 @@
                                         <constraint firstItem="zkm-jw-B5r" firstAttribute="leading" secondItem="s04-wn-cKs" secondAttribute="leading" constant="8" id="77w-li-af6"/>
                                         <constraint firstItem="kUp-i0-aSV" firstAttribute="trailing" secondItem="ew4-3e-yMF" secondAttribute="trailing" id="Ahr-S6-GQ2"/>
                                         <constraint firstItem="Idd-AZ-f8V" firstAttribute="leading" secondItem="s04-wn-cKs" secondAttribute="leading" constant="8" id="CpT-4j-ssT"/>
-                                        <constraint firstItem="Idd-AZ-f8V" firstAttribute="top" secondItem="shk-hd-DJN" secondAttribute="bottom" constant="8" id="Ey3-Q7-FxD"/>
+                                        <constraint firstItem="shk-hd-DJN" firstAttribute="top" secondItem="Idd-AZ-f8V" secondAttribute="bottom" constant="16" id="JkG-eg-Brc"/>
                                         <constraint firstItem="N40-2f-wzg" firstAttribute="leading" secondItem="s04-wn-cKs" secondAttribute="leading" constant="8" id="Jvx-ca-cEl"/>
                                         <constraint firstItem="N40-2f-wzg" firstAttribute="top" secondItem="QZB-oP-URL" secondAttribute="bottom" constant="8" id="OGh-7N-DUi"/>
                                         <constraint firstItem="zkm-jw-B5r" firstAttribute="top" secondItem="s04-wn-cKs" secondAttribute="top" id="QIm-vC-Jfw"/>
                                         <constraint firstAttribute="trailing" secondItem="N40-2f-wzg" secondAttribute="trailing" constant="8" id="R52-Ge-dtb"/>
+                                        <constraint firstItem="Idd-AZ-f8V" firstAttribute="top" secondItem="N40-2f-wzg" secondAttribute="bottom" constant="8" id="R60-T9-iBJ"/>
                                         <constraint firstAttribute="trailing" secondItem="Idd-AZ-f8V" secondAttribute="trailing" constant="8" id="SlT-a4-I3c"/>
                                         <constraint firstItem="shk-hd-DJN" firstAttribute="leading" secondItem="s04-wn-cKs" secondAttribute="leading" constant="8" id="cuN-25-xXi"/>
                                         <constraint firstItem="QZB-oP-URL" firstAttribute="top" secondItem="zkm-jw-B5r" secondAttribute="bottom" constant="8" id="ffh-ez-wcI"/>
                                         <constraint firstAttribute="trailing" secondItem="shk-hd-DJN" secondAttribute="trailing" constant="8" id="gCI-TM-2jV"/>
                                         <constraint firstAttribute="trailing" secondItem="QZB-oP-URL" secondAttribute="trailing" constant="8" id="hkQ-20-cT2"/>
                                         <constraint firstItem="QZB-oP-URL" firstAttribute="leading" secondItem="s04-wn-cKs" secondAttribute="leading" constant="8" id="jEn-7q-qMM"/>
-                                        <constraint firstItem="shk-hd-DJN" firstAttribute="top" secondItem="N40-2f-wzg" secondAttribute="bottom" constant="16" id="tF2-zz-91u"/>
                                         <constraint firstAttribute="trailing" secondItem="zkm-jw-B5r" secondAttribute="trailing" constant="8" id="u0t-dR-p4s"/>
                                     </constraints>
                                 </view>

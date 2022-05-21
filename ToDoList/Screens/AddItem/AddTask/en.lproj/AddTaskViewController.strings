@@ -22,3 +22,8 @@
 
 /* Class = "UINavigationItem"; title = "Add task"; ObjectID = "x1i-UB-hyd"; */
 "x1i-UB-hyd.title" = "Add task";
+
+//UIButton template
+"Idd-AZ-f8V.configuration.title" = "Choose template";
+"Idd-AZ-f8V.normalTitle" = "Choose template";
+

@@ -12,7 +12,7 @@
         <!--Edit Item-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="EditTaskViewController" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="EditTaskViewController" customModule="ToDoList" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EditTaskViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="EditTaskViewController" customModule="ToDoList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -93,18 +93,18 @@
                                                 </datePicker>
                                             </subviews>
                                         </stackView>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMR-FV-Uip">
-                                            <rect key="frame" x="8" y="201" width="398" height="31"/>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4lx-jA-Zid">
+                                            <rect key="frame" x="8" y="193" width="398" height="31"/>
                                             <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="filled" title="Save changes"/>
+                                            <buttonConfiguration key="configuration" style="tinted" title="Choose from template" cornerStyle="capsule" titleAlignment="automatic"/>
                                             <connections>
-                                                <action selector="saveChanges:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="48Y-Cj-nWb"/>
+                                                <action selector="chooseTemplate:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="dzH-B9-5fT"/>
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H81-2S-NnB">
-                                            <rect key="frame" x="8" y="240" width="398" height="31"/>
+                                            <rect key="frame" x="8" y="279" width="398" height="31"/>
                                             <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="filled" title="Delete task">
+                                            <buttonConfiguration key="configuration" style="filled" title="Delete task" cornerStyle="capsule">
                                                 <color key="baseBackgroundColor" systemColor="systemRedColor"/>
                                             </buttonConfiguration>
                                             <connections>
@@ -132,12 +132,12 @@
                                                 </switch>
                                             </subviews>
                                         </stackView>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4lx-jA-Zid">
-                                            <rect key="frame" x="8" y="279" width="398" height="31"/>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMR-FV-Uip">
+                                            <rect key="frame" x="8" y="240" width="398" height="31"/>
                                             <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="tinted" title="Choose from template" cornerStyle="capsule" titleAlignment="automatic"/>
+                                            <buttonConfiguration key="configuration" style="filled" title="Save changes" cornerStyle="capsule"/>
                                             <connections>
-                                                <action selector="chooseTemplate:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="dzH-B9-5fT"/>
+                                                <action selector="saveChanges:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="48Y-Cj-nWb"/>
                                             </connections>
                                         </button>
                                     </subviews>
@@ -145,7 +145,6 @@
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="uMR-FV-Uip" secondAttribute="trailing" constant="8" id="1NZ-M7-oSU"/>
                                         <constraint firstItem="pJz-LH-qW9" firstAttribute="top" secondItem="SP8-e8-5zZ" secondAttribute="top" id="25D-hs-6sh"/>
-                                        <constraint firstItem="H81-2S-NnB" firstAttribute="top" secondItem="uMR-FV-Uip" secondAttribute="bottom" constant="8" id="3xp-OU-wxl"/>
                                         <constraint firstItem="feo-c4-Pl9" firstAttribute="leading" secondItem="SP8-e8-5zZ" secondAttribute="leading" constant="8" id="4NJ-Je-WBf"/>
                                         <constraint firstAttribute="trailing" secondItem="H81-2S-NnB" secondAttribute="trailing" constant="8" id="5EP-W4-oOD"/>
                                         <constraint firstAttribute="trailing" secondItem="r0v-Gd-IMR" secondAttribute="trailing" constant="8" id="BOf-3T-iZC"/>
@@ -153,15 +152,16 @@
                                         <constraint firstItem="feo-c4-Pl9" firstAttribute="top" secondItem="Jt4-KH-S4Y" secondAttribute="bottom" constant="8" id="GaR-H5-CG1"/>
                                         <constraint firstAttribute="trailing" secondItem="pJz-LH-qW9" secondAttribute="trailing" constant="8" id="P71-Ce-FjZ"/>
                                         <constraint firstItem="4lx-jA-Zid" firstAttribute="leading" secondItem="SP8-e8-5zZ" secondAttribute="leading" constant="8" id="Que-H3-B7b"/>
-                                        <constraint firstItem="uMR-FV-Uip" firstAttribute="top" secondItem="feo-c4-Pl9" secondAttribute="bottom" constant="16" id="UUQ-eI-cd1"/>
-                                        <constraint firstItem="4lx-jA-Zid" firstAttribute="top" secondItem="H81-2S-NnB" secondAttribute="bottom" constant="8" id="Utf-4E-LCl"/>
                                         <constraint firstItem="pJz-LH-qW9" firstAttribute="leading" secondItem="SP8-e8-5zZ" secondAttribute="leading" constant="8" id="VOC-Qh-ppx"/>
                                         <constraint firstItem="4SM-hR-rUr" firstAttribute="trailing" secondItem="QEZ-HF-Dwb" secondAttribute="trailing" id="VQo-C8-gZh"/>
                                         <constraint firstItem="r0v-Gd-IMR" firstAttribute="leading" secondItem="SP8-e8-5zZ" secondAttribute="leading" constant="8" id="XWr-p8-1MS"/>
                                         <constraint firstItem="Jt4-KH-S4Y" firstAttribute="top" secondItem="r0v-Gd-IMR" secondAttribute="bottom" constant="8" id="ceA-X7-VZC"/>
                                         <constraint firstAttribute="trailing" secondItem="feo-c4-Pl9" secondAttribute="trailing" constant="8" id="dFU-UU-xrA"/>
+                                        <constraint firstItem="uMR-FV-Uip" firstAttribute="top" secondItem="4lx-jA-Zid" secondAttribute="bottom" constant="16" id="fWR-Ht-hpl"/>
+                                        <constraint firstItem="4lx-jA-Zid" firstAttribute="top" secondItem="feo-c4-Pl9" secondAttribute="bottom" constant="8" id="ffg-fw-Sql"/>
                                         <constraint firstItem="r0v-Gd-IMR" firstAttribute="top" secondItem="pJz-LH-qW9" secondAttribute="bottom" constant="8" id="fx4-gZ-4mA"/>
                                         <constraint firstAttribute="trailing" secondItem="4lx-jA-Zid" secondAttribute="trailing" constant="8" id="gOR-9Q-Uez"/>
+                                        <constraint firstItem="H81-2S-NnB" firstAttribute="top" secondItem="uMR-FV-Uip" secondAttribute="bottom" constant="8" id="hRA-GX-Hzt"/>
                                         <constraint firstItem="uMR-FV-Uip" firstAttribute="leading" secondItem="SP8-e8-5zZ" secondAttribute="leading" constant="8" id="lZS-iG-ahR"/>
                                         <constraint firstItem="Jt4-KH-S4Y" firstAttribute="leading" secondItem="SP8-e8-5zZ" secondAttribute="leading" constant="8" id="lpD-61-54x"/>
                                         <constraint firstItem="H81-2S-NnB" firstAttribute="leading" secondItem="SP8-e8-5zZ" secondAttribute="leading" constant="8" id="y10-DV-8Ae"/>

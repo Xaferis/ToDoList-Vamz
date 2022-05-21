@@ -3,10 +3,10 @@
 "9nN-Jb-AME.text" = "Name:";
 
 /* Class = "UIButton"; configuration.title = "Save to favourites"; ObjectID = "KoR-Wl-HoO"; */
-"KoR-Wl-HoO.configuration.title" = "Save to favourites";
+"KoR-Wl-HoO.configuration.title" = "Save template";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "KoR-Wl-HoO"; */
-"KoR-Wl-HoO.normalTitle" = "Button";
+"KoR-Wl-HoO.normalTitle" = "Save template";
 
 /* Class = "UITextField"; placeholder = "Template description"; ObjectID = "S3f-P0-hBt"; */
 "S3f-P0-hBt.placeholder" = "Template description";
@@ -15,7 +15,7 @@
 "ZMs-ZU-6Ss.placeholder" = "Template name";
 
 /* Class = "UINavigationItem"; title = "Add favourite"; ObjectID = "cSs-DQ-iV6"; */
-"cSs-DQ-iV6.title" = "Add favourite";
+"cSs-DQ-iV6.title" = "Add template";
 
 /* Class = "UILabel"; text = "Description:"; ObjectID = "pHv-5r-ADH"; */
 "pHv-5r-ADH.text" = "Description:";

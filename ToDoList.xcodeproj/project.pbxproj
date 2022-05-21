@@ -23,7 +23,7 @@
 		6B4ED4F52837B196005A6A73 /* EditTemplateViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B4ED4F72837B196005A6A73 /* EditTemplateViewController.storyboard */; };
 		6B4ED4FC2837B23F005A6A73 /* AddTemplateViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B4ED4FE2837B23F005A6A73 /* AddTemplateViewController.storyboard */; };
 		6B4ED50528384F3C005A6A73 /* TemplatePickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4ED50428384F3C005A6A73 /* TemplatePickViewController.swift */; };
-		6B4ED50728384F58005A6A73 /* TemplatePickViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B4ED50628384F58005A6A73 /* TemplatePickViewController.storyboard */; };
+		6B4ED50828392798005A6A73 /* TemplatePickViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B4ED50A28392798005A6A73 /* TemplatePickViewController.storyboard */; };
 		6BDC93C6281DF01B0033AB52 /* EditTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDC93C5281DF01B0033AB52 /* EditTaskViewController.swift */; };
 		6BEA0BFF281BF934007E7065 /* TabbarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BEA0BFE281BF934007E7065 /* TabbarController.storyboard */; };
 		6BEA0C01281BF9BC007E7065 /* TemplatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEA0C00281BF9BC007E7065 /* TemplatesViewController.swift */; };
@@ -63,7 +63,9 @@
 		6B4ED5002837B241005A6A73 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/AddTemplateViewController.strings; sourceTree = "<group>"; };
 		6B4ED5022837B26F005A6A73 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/AddTemplateViewController.strings; sourceTree = "<group>"; };
 		6B4ED50428384F3C005A6A73 /* TemplatePickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplatePickViewController.swift; sourceTree = "<group>"; };
-		6B4ED50628384F58005A6A73 /* TemplatePickViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TemplatePickViewController.storyboard; sourceTree = "<group>"; };
+		6B4ED50928392798005A6A73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TemplatePickViewController.storyboard; sourceTree = "<group>"; };
+		6B4ED50C2839279B005A6A73 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/TemplatePickViewController.strings; sourceTree = "<group>"; };
+		6B4ED50E2839279C005A6A73 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/TemplatePickViewController.strings; sourceTree = "<group>"; };
 		6BDC93C5281DF01B0033AB52 /* EditTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskViewController.swift; sourceTree = "<group>"; };
 		6BEA0BFE281BF934007E7065 /* TabbarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabbarController.storyboard; sourceTree = "<group>"; };
 		6BEA0C00281BF9BC007E7065 /* TemplatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplatesViewController.swift; sourceTree = "<group>"; };
@@ -177,20 +179,20 @@
 			path = EditTask;
 			sourceTree = "<group>";
 		};
-		6B3EC6332835B23B008F475F /* EditFavourites */ = {
+		6B3EC6332835B23B008F475F /* EditTemplate */ = {
 			isa = PBXGroup;
 			children = (
 				6B3EC6382835BC68008F475F /* EditTemplateViewController.swift */,
 				6B4ED4F72837B196005A6A73 /* EditTemplateViewController.storyboard */,
 			);
-			path = EditFavourites;
+			path = EditTemplate;
 			sourceTree = "<group>";
 		};
 		6B4ED50328384EC6005A6A73 /* Picker */ = {
 			isa = PBXGroup;
 			children = (
 				6B4ED50428384F3C005A6A73 /* TemplatePickViewController.swift */,
-				6B4ED50628384F58005A6A73 /* TemplatePickViewController.storyboard */,
+				6B4ED50A28392798005A6A73 /* TemplatePickViewController.storyboard */,
 			);
 			path = Picker;
 			sourceTree = "<group>";
@@ -199,7 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				6B3EC6322835B224008F475F /* EditTask */,
-				6B3EC6332835B23B008F475F /* EditFavourites */,
+				6B3EC6332835B23B008F475F /* EditTemplate */,
 			);
 			path = EditItem;
 			sourceTree = "<group>";
@@ -379,7 +381,7 @@
 				6BEA0BFF281BF934007E7065 /* TabbarController.storyboard in Resources */,
 				6BF14299283454810018A2F1 /* SearchViewController.storyboard in Resources */,
 				6B4ED4FC2837B23F005A6A73 /* AddTemplateViewController.storyboard in Resources */,
-				6B4ED50728384F58005A6A73 /* TemplatePickViewController.storyboard in Resources */,
+				6B4ED50828392798005A6A73 /* TemplatePickViewController.storyboard in Resources */,
 				6B4ED4F52837B196005A6A73 /* EditTemplateViewController.storyboard in Resources */,
 				6BEA0C14281C4ECA007E7065 /* TodoTaskTableViewCell.xib in Resources */,
 				6B2FF29927FF222B001FCD4B /* TodolistMainViewController.storyboard in Resources */,
@@ -453,6 +455,16 @@
 				6B4ED5022837B26F005A6A73 /* sk */,
 			);
 			name = AddTemplateViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		6B4ED50A28392798005A6A73 /* TemplatePickViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B4ED50928392798005A6A73 /* Base */,
+				6B4ED50C2839279B005A6A73 /* en */,
+				6B4ED50E2839279C005A6A73 /* sk */,
+			);
+			name = TemplatePickViewController.storyboard;
 			sourceTree = "<group>";
 		};
 		6BF14294283453FA0018A2F1 /* TemplatesViewController.storyboard */ = {

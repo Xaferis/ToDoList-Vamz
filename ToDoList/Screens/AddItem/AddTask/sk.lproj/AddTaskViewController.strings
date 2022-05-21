@@ -9,10 +9,10 @@
 "04w-F0-dUW.text" = "Názov:";
 
 /* Class = "UIButton"; configuration.title = "Save task"; ObjectID = "shk-hd-DJN"; */
-"shk-hd-DJN.configuration.title" = "Uložiť";
+"shk-hd-DJN.configuration.title" = "Uložiť úlohu";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "shk-hd-DJN"; */
-"shk-hd-DJN.normalTitle" = "Uložiť";
+"shk-hd-DJN.normalTitle" = "Uložiť úlohu";
 
 /* Class = "UITextField"; placeholder = "Task description"; ObjectID = "wD4-mx-kg1"; */
 "wD4-mx-kg1.placeholder" = "Popis úlohy";
@@ -22,3 +22,7 @@
 
 /* Class = "UINavigationItem"; title = "Add task"; ObjectID = "x1i-UB-hyd"; */
 "x1i-UB-hyd.title" = "Pridať úlohu";
+
+//UIButton template
+"Idd-AZ-f8V.configuration.title" = "Vybrať šablónu";
+"Idd-AZ-f8V.normalTitle" = "Vybrať šablónu";

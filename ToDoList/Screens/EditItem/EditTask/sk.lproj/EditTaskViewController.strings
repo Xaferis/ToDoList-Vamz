@@ -31,3 +31,7 @@
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "uMR-FV-Uip"; */
 "uMR-FV-Uip.normalTitle" = "Uložiť zmeny";
+
+//UIButton normalTitle: Choose template
+"4lx-jA-Zid.configuration.title" = "Vybrať šablónu";
+"4lx-jA-Zid.normalTitle" = "Vybrať šablónu";

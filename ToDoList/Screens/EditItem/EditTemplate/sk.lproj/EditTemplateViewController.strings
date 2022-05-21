@@ -1,9 +1,9 @@
 
 /* Class = "UIButton"; configuration.title = "Save"; ObjectID = "SfM-NI-V3T"; */
-"SfM-NI-V3T.configuration.title" = "Uložiť";
+"SfM-NI-V3T.configuration.title" = "Uložiť zmeny";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "SfM-NI-V3T"; */
-"SfM-NI-V3T.normalTitle" = "Uložiť";
+"SfM-NI-V3T.normalTitle" = "Uložiť zmeny";
 
 /* Class = "UITextField"; placeholder = "Template name"; ObjectID = "aUS-ej-ah8"; */
 "aUS-ej-ah8.placeholder" = "Názov šablóny";
@@ -21,7 +21,7 @@
 "ob7-41-vXd.title" = "Upraviť šablónu";
 
 /* Class = "UIButton"; configuration.title = "Delete"; ObjectID = "qT5-mr-hIa"; */
-"qT5-mr-hIa.configuration.title" = "Vymazať";
+"qT5-mr-hIa.configuration.title" = "Vymazať šablónu";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "qT5-mr-hIa"; */
-"qT5-mr-hIa.normalTitle" = "Vymazať";
+"qT5-mr-hIa.normalTitle" = "Vymazať šablónu";
