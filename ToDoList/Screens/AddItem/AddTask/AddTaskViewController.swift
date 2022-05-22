@@ -7,6 +7,7 @@
 
 import UIKit
 
+/// Trieda ma na starosti spravu UI elementov obrazovku AddTaskViewController.storyboard.
 class AddTaskViewController: UIViewController {
 
     
@@ -21,6 +22,8 @@ class AddTaskViewController: UIViewController {
     
     
     // MARK: - Actions
+    /// Metoda reagujuca na slacenie tlacidla Save. Vytvori task z dat ziskanych z atributov pre UI elementy a nasledne zavola add funkciu z manazera, ktoremu ako parameter posle novo vytvoreny task.
+    /// - Parameter sender: Objekt volajuci tuto funkciu.
     @IBAction func saveButton(_ sender: Any) {
         hapticFeedback.impactOccurred()
         if let text = taskNameLabel.text {
@@ -35,11 +38,15 @@ class AddTaskViewController: UIViewController {
         }
     }
 
+    /// Metoda reagujuca na udalost stlacenia tlacidla Cancel. Zavola dismiss nad touto obrazovkou.
+    /// - Parameter sender: Objekt volajuci tuto funkciu.
     @IBAction func cancel(_ sender: Any) {
         hapticFeedback.impactOccurred()
         dismiss(animated: true)
     }
     
+    /// Metoda reagujuca na udalost stlacenia tlacidla Choose template. Pushne novu obrazovku TemplatePickViewController. Ak sa v nom vyberie nejaka sablona, jej hodnoty atributov nastavi do ``taskNameLabel`` a ``taskDescriptionLabel``.
+    /// - Parameter sender: Objekt volajuci tuto funkciu.
     @IBAction func chooseTemplate(_ sender: Any) {
         hapticFeedback.impactOccurred()
         let storyboard = UIStoryboard(name: "TemplatePickViewController", bundle: nil)

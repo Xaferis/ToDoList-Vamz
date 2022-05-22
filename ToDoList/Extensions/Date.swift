@@ -8,6 +8,12 @@
 import Foundation
 
 extension Date {
+    /// Funkcia, ktora z hodnot ziskanych v parametri vrati Datum
+    /// - Parameters:
+    ///   - year: Rok pozadovaneho datumu
+    ///   - month: Mesiac pozadovaneho datumu
+    ///   - day: Den pozadovaneho datumu
+    /// - Returns: Naformatovany datum
     static func from(_ year: Int, _ month: Int, _ day: Int) -> Date?
         {
             let gregorianCalendar = Calendar(identifier: .gregorian)

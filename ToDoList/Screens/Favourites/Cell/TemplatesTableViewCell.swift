@@ -7,6 +7,7 @@
 
 import UIKit
 
+///Trieda ma na starosti spravu UI elementov celly TemplatesTableViewCell.xib.
 class TemplatesTableViewCell: UITableViewCell {
     
     
@@ -16,10 +17,13 @@ class TemplatesTableViewCell: UITableViewCell {
     
     
     //MARK: - Static
+    /// Vrati nazov classy v String
     static var classString: String { String(describing: TemplatesTableViewCell.self) }
     
     
     //MARK: - Setup
+    /// Nastavi UI elemnty storyboardu na hodnoty zo sablony prijatej parametrom.
+    /// - Parameter item: Sabolna, ktoru bude cella zobrazovat.
     func setupCell(with item: TemplateItem) {
         nameLabel.text = item.name
         descriptionLabel.text = item.description
