@@ -66,6 +66,7 @@
 		6B4ED50928392798005A6A73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TemplatePickViewController.storyboard; sourceTree = "<group>"; };
 		6B4ED50C2839279B005A6A73 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/TemplatePickViewController.strings; sourceTree = "<group>"; };
 		6B4ED50E2839279C005A6A73 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/TemplatePickViewController.strings; sourceTree = "<group>"; };
+		6B5ACCA5283AD6AA003BF9CA /* Dokumentácia VAMZ.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dokumentácia VAMZ.docx"; sourceTree = "<group>"; };
 		6BDC93C5281DF01B0033AB52 /* EditTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskViewController.swift; sourceTree = "<group>"; };
 		6BEA0BFE281BF934007E7065 /* TabbarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabbarController.storyboard; sourceTree = "<group>"; };
 		6BEA0C00281BF9BC007E7065 /* TemplatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplatesViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +109,7 @@
 		6B2FF28527FF222B001FCD4B = {
 			isa = PBXGroup;
 			children = (
+				6B5ACCA4283AD646003BF9CA /* Dokumentacia */,
 				6B2FF29027FF222B001FCD4B /* ToDoList */,
 				6B2FF28F27FF222B001FCD4B /* Products */,
 			);
@@ -195,6 +197,14 @@
 				6B4ED50A28392798005A6A73 /* TemplatePickViewController.storyboard */,
 			);
 			path = Picker;
+			sourceTree = "<group>";
+		};
+		6B5ACCA4283AD646003BF9CA /* Dokumentacia */ = {
+			isa = PBXGroup;
+			children = (
+				6B5ACCA5283AD6AA003BF9CA /* Dokumentácia VAMZ.docx */,
+			);
+			path = Dokumentacia;
 			sourceTree = "<group>";
 		};
 		6BDC93C4281DEFFC0033AB52 /* EditItem */ = {
