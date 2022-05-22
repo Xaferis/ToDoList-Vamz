@@ -54,7 +54,7 @@ class TodolistMainViewController: UIViewController {
         }
     }
     
-    /// Tato metoda je volana po tom, co sa objavi View z ViewControllera. Metoda obnovi stav tableView
+    /// Tato metoda je volana po tom, co sa objavi View z ViewControllera. Metoda obnovi stav tableView.
     override func viewDidAppear(_ animated: Bool) {
         refreshTableView()
     }
